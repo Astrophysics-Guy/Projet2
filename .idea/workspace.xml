@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4d7b9a0-4347-4c3b-8a47-bf7ac9fc91f2" name="Default" comment="" />
+    <list default="true" id="b4d7b9a0-4347-4c3b-8a47-bf7ac9fc91f2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,14 +23,12 @@
       <file leaf-file-name="Projet2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="381" column="14" lean-forward="false" selection-start-line="381" selection-start-column="14" selection-end-line="381" selection-end-column="14" />
+            <state relative-caret-position="312">
+              <caret line="393" column="71" lean-forward="true" selection-start-line="393" selection-start-column="71" selection-end-line="393" selection-end-column="71" />
               <folding>
                 <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
                 <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
                 <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-                <element signature="e#6093#6094#0" expanded="true" />
-                <element signature="e#6151#6152#0" expanded="true" />
                 <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
                 <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
               </folding>
@@ -84,6 +84,9 @@
     <option name="y" value="31" />
     <option name="width" value="1608" />
     <option name="height" value="878" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -322,8 +325,6 @@
             <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
             <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
             <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-            <element signature="e#6093#6094#0" expanded="true" />
-            <element signature="e#6151#6152#0" expanded="true" />
             <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
             <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
           </folding>
@@ -346,8 +347,6 @@
             <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
             <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
             <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-            <element signature="e#6093#6094#0" expanded="true" />
-            <element signature="e#6151#6152#0" expanded="true" />
             <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
             <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
           </folding>
@@ -362,8 +361,6 @@
             <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
             <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
             <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-            <element signature="e#6093#6094#0" expanded="true" />
-            <element signature="e#6151#6152#0" expanded="true" />
             <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
             <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
           </folding>
@@ -385,8 +382,6 @@
             <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
             <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
             <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-            <element signature="e#6093#6094#0" expanded="true" />
-            <element signature="e#6151#6152#0" expanded="true" />
             <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
             <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
           </folding>
@@ -441,14 +436,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="381" column="14" lean-forward="false" selection-start-line="381" selection-start-column="14" selection-end-line="381" selection-end-column="14" />
+        <state relative-caret-position="312">
+          <caret line="393" column="71" lean-forward="true" selection-start-line="393" selection-start-column="71" selection-end-line="393" selection-end-column="71" />
           <folding>
             <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
             <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
             <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-            <element signature="e#6093#6094#0" expanded="true" />
-            <element signature="e#6151#6152#0" expanded="true" />
             <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
             <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
           </folding>
