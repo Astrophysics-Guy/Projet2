@@ -21,7 +21,7 @@
       <file leaf-file-name="Projet2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
+            <state relative-caret-position="24">
               <caret line="381" column="14" lean-forward="false" selection-start-line="381" selection-start-column="14" selection-end-line="381" selection-end-column="14" />
               <folding>
                 <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
@@ -31,10 +31,6 @@
                 <element signature="e#6151#6152#0" expanded="true" />
                 <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
                 <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
-                <marker date="1509771329724" expanded="false" signature="11205:11282" ph=" { " />
-                <marker date="1509771329724" expanded="false" signature="11324:11327" ph=" }" />
-                <marker date="1509771329724" expanded="false" signature="19974:19979" ph=" { " />
-                <marker date="1509771329724" expanded="false" signature="19992:19995" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -67,6 +63,9 @@
       <replace>textTitre</replace>
       <replace>colonneButton</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -101,6 +100,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -128,9 +128,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -138,6 +137,10 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="projet2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -284,7 +287,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33697918" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -323,10 +326,30 @@
             <element signature="e#6151#6152#0" expanded="true" />
             <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
             <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
-            <marker date="1509771329724" expanded="false" signature="11205:11282" ph=" { " />
-            <marker date="1509771329724" expanded="false" signature="11324:11327" ph=" }" />
-            <marker date="1509771329724" expanded="false" signature="19974:19979" ph=" { " />
-            <marker date="1509771329724" expanded="false" signature="19992:19995" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Documents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
+            <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
+            <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
+            <element signature="e#6093#6094#0" expanded="true" />
+            <element signature="e#6151#6152#0" expanded="true" />
+            <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
+            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -343,10 +366,6 @@
             <element signature="e#6151#6152#0" expanded="true" />
             <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
             <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
-            <marker date="1509771329724" expanded="false" signature="11205:11282" ph=" { " />
-            <marker date="1509771329724" expanded="false" signature="11324:11327" ph=" }" />
-            <marker date="1509771329724" expanded="false" signature="19974:19979" ph=" { " />
-            <marker date="1509771329724" expanded="false" signature="19992:19995" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -370,10 +389,6 @@
             <element signature="e#6151#6152#0" expanded="true" />
             <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
             <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
-            <marker date="1509771329724" expanded="false" signature="11205:11282" ph=" { " />
-            <marker date="1509771329724" expanded="false" signature="11324:11327" ph=" }" />
-            <marker date="1509771329724" expanded="false" signature="19974:19979" ph=" { " />
-            <marker date="1509771329724" expanded="false" signature="19992:19995" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -426,7 +441,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
+        <state relative-caret-position="24">
           <caret line="381" column="14" lean-forward="false" selection-start-line="381" selection-start-column="14" selection-end-line="381" selection-end-column="14" />
           <folding>
             <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
@@ -436,10 +451,6 @@
             <element signature="e#6151#6152#0" expanded="true" />
             <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
             <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
-            <marker date="1509771329724" expanded="false" signature="11205:11282" ph=" { " />
-            <marker date="1509771329724" expanded="false" signature="11324:11327" ph=" }" />
-            <marker date="1509771329724" expanded="false" signature="19974:19979" ph=" { " />
-            <marker date="1509771329724" expanded="false" signature="19992:19995" ph=" }" />
           </folding>
         </state>
       </provider>
