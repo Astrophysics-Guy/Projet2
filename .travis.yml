@@ -9,7 +9,3 @@ ant: run
 branches:
   only:
   - master
-addons:
-  apt:
-    packages:
-      - oracle-java8-installer
