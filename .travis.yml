@@ -1,11 +1,5 @@
-# language
 language: java
-
-# version numbers
 jdk:
-    - oraclejdk8
+  - oraclejdk8
 
-ant: run
-branches:
-  only:
-  - master
+script: ant build
