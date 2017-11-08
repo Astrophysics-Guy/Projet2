@@ -107,8 +107,8 @@ public class Projet2 extends Application {
 
 			primaryStage.sizeToScene();
 			//primaryStage.setResizable(false);
-			primaryStage.setMaximized(true);
-			//primaryStage.setFullScreen(true);
+			//primaryStage.setMaximized(true); // fermer les //
+			//primaryStage.setFullScreen(true); // non pour mtn
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Projet2");
 			primaryStage.show();
@@ -231,8 +231,9 @@ public class Projet2 extends Application {
 				textMotDePasse.setFont(font(15));
 
 				textFieldEmploye = new TextField();
-				textFieldEmploye.setPromptText("No Employe");
 				passwordFieldEmploye = new PasswordField();
+
+				textFieldEmploye.setPromptText("No Employe");
 				passwordFieldEmploye.setPromptText("Mot de passe");
 				
 				lblMsg = new Label();
@@ -247,50 +248,8 @@ public class Projet2 extends Application {
 				
 				vBox.getChildren().addAll(hBox1, hBox2, hBox3);
 				
-				textFieldEmploye.setOnAction(new EventHandler<ActionEvent>() {
-
-					@Override
-					public void handle(ActionEvent arg0) {
-						// TODO Auto-generated method stub
-						if (passwordFieldEmploye.getText().trim().equals("10101997") && textFieldEmploye.getText().trim().equals("Guelleh")) {
-							lblMsg.setText("Connecte en tant que prepose " + textFieldEmploye.getText());
-							lblMsg.setTextFill(Color.rgb(21, 117, 84));
-							
-							textFieldEmploye.setDisable(true);
-							passwordFieldEmploye.setDisable(true);
-							
-							connexion(true);
-						}
-						else {
-							lblMsg.setText("No d'employe ou mot de passe incorrecte");
-							lblMsg.setTextFill(Color.rgb(210, 39, 30));
-						}
-						
-						passwordFieldEmploye.clear();
-					}
-				});
-				passwordFieldEmploye.setOnAction(new EventHandler<ActionEvent>() {
-
-					@Override
-					public void handle(ActionEvent event) {
-						// TODO Auto-generated method stub
-						if (passwordFieldEmploye.getText().trim().equals("10101997") && textFieldEmploye.getText().trim().equals("Guelleh")) {
-							lblMsg.setText("Connecte en tant que prepose " + textFieldEmploye.getText());
-							lblMsg.setTextFill(Color.rgb(21, 117, 84));
-							
-							textFieldEmploye.setDisable(true);
-							passwordFieldEmploye.setDisable(true);
-							
-							connexion(true);
-						}
-						else {
-							lblMsg.setText("No d'employe ou mot de passe incorrecte");
-							lblMsg.setTextFill(Color.rgb(210, 39, 30));
-						}
-						
-						passwordFieldEmploye.clear();
-					}
-				});
+				textFieldEmploye.setOnAction(new classConnexionEmploye());
+				passwordFieldEmploye.setOnAction(new classConnexionEmploye());
 			}
 		});
 		menuItemAdherent.setOnAction(new EventHandler<ActionEvent>() {
@@ -301,10 +260,11 @@ public class Projet2 extends Application {
 				if (event.getSource() instanceof MenuItem) textTitre.setText(retourneNomMenuItem(((MenuItem) event.getSource()).getText()));
 
 				textAdherent = new Text("No Adherent");
-				
+
 				textAdherent.setFont(font(15));
 				
 				textFieldAdherent = new TextField();
+
 				textFieldAdherent.setPromptText("No Adherent");
 
 				lblMsg = new Label();
@@ -317,33 +277,8 @@ public class Projet2 extends Application {
 				
 				vBox.getChildren().addAll(hBox1, hBox2);
 				
-				textFieldAdherent.setOnAction(new EventHandler<ActionEvent>() {
-
-					@Override
-					public void handle(ActionEvent event) {
-						// TODO Auto-generated method stub
-						Collections.sort(arrLstAdherent);
-						
-						boolean blnFor = false;
-						for (String strAdherent : arrLstAdherent) {
-							if (textFieldAdherent.getText().trim().equals(strAdherent)) {
-								lblMsg.setText("Connecte en tant qu'adherent " + textFieldAdherent.getText());
-								lblMsg.setTextFill(Color.rgb(21, 117, 84));
-								
-								textFieldAdherent.setDisable(true);
-								
-								connexion(false);
-								
-								blnFor = true;
-							}
-						}
-						
-						if (!blnFor) {
-							lblMsg.setText("No d'adherent incorrecte");
-							lblMsg.setTextFill(Color.rgb(210, 39, 30));
-						}
-					}
-				});
+				textFieldAdherent.setOnAction(new classConnexionAdherent());
+				//System.out.println(textAdherent.getText());
 			}
 		});
 
@@ -353,6 +288,53 @@ public class Projet2 extends Application {
 
 			}
 		});
+	}
+	private class classConnexionEmploye implements EventHandler<ActionEvent> { // lorsque l'utilisateur est un employe et veut se connecter
+
+		@Override
+		public void handle(ActionEvent event) {
+			if (passwordFieldEmploye.getText().trim().equals("10101997") && textFieldEmploye.getText().trim().equals("Guelleh")) {
+				lblMsg.setText("Connecte en tant que prepose " + textFieldEmploye.getText());
+				lblMsg.setTextFill(Color.rgb(21, 117, 84));
+
+				textFieldEmploye.setDisable(true);
+				passwordFieldEmploye.setDisable(true);
+
+				connexion(true);
+			}
+			else {
+				lblMsg.setText("No d'employe ou mot de passe incorrecte");
+				lblMsg.setTextFill(Color.rgb(210, 39, 30));
+			}
+
+			passwordFieldEmploye.clear();
+		}
+	}
+	private class classConnexionAdherent implements EventHandler<ActionEvent> { // lorsque l'utilisateur est un adherent et veut se connecter
+
+		@Override
+		public void handle(ActionEvent event) {
+			Collections.sort(arrLstAdherent);
+
+			boolean blnFor = false;
+			for (String strAdherent : arrLstAdherent) {
+				if (textFieldAdherent.getText().trim().equals(strAdherent)) {
+					lblMsg.setText("Connecte en tant qu'adherent " + textFieldAdherent.getText());
+					lblMsg.setTextFill(Color.rgb(21, 117, 84));
+
+					textFieldAdherent.setDisable(true);
+
+					connexion(false);
+
+					blnFor = true;
+				}
+			}
+
+			if (!blnFor) { // il n'a trouve aucun adherent dans la liste qui correspond
+				lblMsg.setText("No d'adherent incorrecte");
+				lblMsg.setTextFill(Color.rgb(210, 39, 30));
+			}
+		}
 	}
 
 	private String retourneNomMenuItem(String strNomMenuItem) { // Remplace _ du string et retourne par exemple Sport au lieu de _Sport
@@ -396,7 +378,7 @@ public class Projet2 extends Application {
 			passwordFieldEmploye.setDisable(false);
 		}
 		if (textFieldAdherent != null) textFieldAdherent.setDisable(false);
-		
+
 		if (lblMsg != null) lblMsg.setText(null);
 		if (gridPaneEmploye != null && vBox != null) vBox.getChildren().remove(gridPaneEmploye);
 		if (group != null && vBox != null) vBox.getChildren().remove(group);
