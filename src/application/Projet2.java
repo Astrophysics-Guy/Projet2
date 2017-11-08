@@ -385,7 +385,7 @@ public class Projet2 extends Application {
 		vBoxButton.getChildren().addAll(btnDeplacerDestination, btnDeplacerSource);
 		
 		gridPaneEmploye = new GridPane();
-		gridPaneEmploye.setAlignment(Pos.TOP_RIGHT);
+		gridPaneEmploye.setAlignment(Pos.BOTTOM_RIGHT);
 		gridPaneEmploye.setPadding(new Insets(5));
 		gridPaneEmploye.setHgap(10);
 		gridPaneEmploye.setVgap(10);
@@ -489,28 +489,31 @@ public class Projet2 extends Application {
 
 		TableView<Documents> tableView = new TableView<>();
 
-		TableColumn<Documents, Integer> colonneNumDoc = new TableColumn<>("No Document"), colonneTitre = new TableColumn<>("Titre"), colonneDate = new TableColumn<>("Date"), colonneEtat = new TableColumn<>("Etat");
+		TableColumn<Documents, Integer> colonneNumDoc = new TableColumn<>("No Document"), colonneTitre = new TableColumn<>("Titre"), colonneDate = new TableColumn<>("Date"), colonneEtat = new TableColumn<>("Etat"), colonneAuteur = new TableColumn<>("Nom Auteur");
 
-		tableView.getColumns().addAll(colonneNumDoc, colonneTitre, colonneDate, colonneEtat);
+		tableView.getColumns().addAll(colonneNumDoc, colonneTitre, colonneDate, colonneEtat, colonneAuteur);
 
-		colonneNumDoc.setPrefWidth(120);
-		colonneTitre.setPrefWidth(120);
-		colonneDate.setPrefWidth(120);
-		colonneEtat.setPrefWidth(120);
-		colonneEtat.setMaxWidth(colonneEtat.getPrefWidth());
+		colonneNumDoc.setPrefWidth(200);
+		colonneTitre.setPrefWidth(200);
+		colonneDate.setPrefWidth(200);
+		colonneEtat.setPrefWidth(200);
+		colonneAuteur.setPrefWidth(200);
+		//colonneAuteur.setMaxWidth(colonneAuteur.getPrefWidth());
 
 		colonneNumDoc.setCellValueFactory(new PropertyValueFactory<>("strNumDoc"));
 		colonneTitre.setCellValueFactory(new PropertyValueFactory<>("strTitre"));
 		colonneDate.setCellValueFactory(new PropertyValueFactory<>("strDate"));
 		colonneEtat.setCellValueFactory(new PropertyValueFactory<>("intPretEtat"));
+		colonneAuteur.setCellValueFactory(new PropertyValueFactory<>("strNomAuteur"));
 
 
-		TextField textFieldNoDocument = new TextField(), textFieldTitre = new TextField(), textFieldDate = new TextField(), textFieldEtat = new TextField();
+		TextField textFieldNoDocument = new TextField(), textFieldTitre = new TextField(), textFieldDate = new TextField(), textFieldEtat = new TextField(), textFieldAuteur = new TextField();
 
 		textFieldNoDocument.setPromptText("No Document");
 		textFieldTitre.setPromptText("Titre");
 		textFieldDate.setPromptText("Date");
 		textFieldEtat.setPromptText("Etat");
+		textFieldAuteur.setPromptText("Nom Auteur");
 		tableView.setItems(observableList);
 
 		Button btnAjouter = new Button("Ajouter");
@@ -518,7 +521,7 @@ public class Projet2 extends Application {
 
         });
 
-		hBoxGroup.getChildren().addAll(textFieldNoDocument, textFieldTitre, textFieldDate, textFieldEtat, btnAjouter);
+		hBoxGroup.getChildren().addAll(textFieldNoDocument, textFieldTitre, textFieldDate, textFieldEtat, textFieldAuteur, btnAjouter);
 		vBoxGroup.getChildren().addAll(text, tableView, hBoxGroup);
 
 		group.getChildren().add(vBoxGroup);
