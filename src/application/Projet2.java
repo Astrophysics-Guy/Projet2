@@ -18,6 +18,7 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -107,7 +108,7 @@ public class Projet2 extends Application {
 
 			primaryStage.sizeToScene();
 			//primaryStage.setResizable(false);
-			//primaryStage.setMaximized(true); // fermer les //
+			primaryStage.setMaximized(true);
 			//primaryStage.setFullScreen(true); // non pour mtn
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Projet2");
@@ -217,77 +218,68 @@ public class Projet2 extends Application {
 	}
 
 	private void setOnAction(MenuItem menuItemPrepose, MenuItem menuItemAdherent, MenuItem menuItemAide) { // setOnAction des boutons, itemMenus, ...etc
-		menuItemPrepose.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent event) {
-				nouvellePersonne();
+		menuItemPrepose.setOnAction(event -> {
+            nouvellePersonne();
 
-				if (event.getSource() instanceof MenuItem) textTitre.setText(retourneNomMenuItem(((MenuItem) event.getSource()).getText()));
+            if (event.getSource() instanceof MenuItem) textTitre.setText(retourneNomMenuItem(((MenuItem) event.getSource()).getText()));
 
-				textEmploye = new Text("No Employe  ");
-				textMotDePasse = new Text("Mot de Passe");
-				
-				textEmploye.setFont(font(15));
-				textMotDePasse.setFont(font(15));
+            textEmploye = new Text("No Employe  ");
+            textMotDePasse = new Text("Mot de Passe");
 
-				textFieldEmploye = new TextField();
-				passwordFieldEmploye = new PasswordField();
+            textEmploye.setFont(font(15));
+            textMotDePasse.setFont(font(15));
 
-				textFieldEmploye.setPromptText("No Employe");
-				passwordFieldEmploye.setPromptText("Mot de passe");
-				
-				lblMsg = new Label();
-				lblMsg.setFont(font(15));
-				HBox hBox1 = new HBox(), hBox2 = new HBox(), hBox3 = new HBox();
-				
-				hBox1.getChildren().addAll(textEmploye, textFieldEmploye);
-				hBox1.setSpacing(10);
-				hBox2.getChildren().addAll(textMotDePasse, passwordFieldEmploye);
-				hBox2.setSpacing(10);
-				hBox3.getChildren().addAll(lblMsg);
-				
-				vBox.getChildren().addAll(hBox1, hBox2, hBox3);
-				
-				textFieldEmploye.setOnAction(new classConnexionEmploye());
-				passwordFieldEmploye.setOnAction(new classConnexionEmploye());
-			}
-		});
-		menuItemAdherent.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent event) {
-				nouvellePersonne();
+            textFieldEmploye = new TextField();
+            passwordFieldEmploye = new PasswordField();
 
-				if (event.getSource() instanceof MenuItem) textTitre.setText(retourneNomMenuItem(((MenuItem) event.getSource()).getText()));
+            textFieldEmploye.setPromptText("No Employe");
+            passwordFieldEmploye.setPromptText("Mot de passe");
 
-				textAdherent = new Text("No Adherent");
+            lblMsg = new Label();
+            lblMsg.setFont(font(15));
+            HBox hBox1 = new HBox(), hBox2 = new HBox(), hBox3 = new HBox();
 
-				textAdherent.setFont(font(15));
-				
-				textFieldAdherent = new TextField();
+            hBox1.getChildren().addAll(textEmploye, textFieldEmploye);
+            hBox1.setSpacing(10);
+            hBox2.getChildren().addAll(textMotDePasse, passwordFieldEmploye);
+            hBox2.setSpacing(10);
+            hBox3.getChildren().addAll(lblMsg);
 
-				textFieldAdherent.setPromptText("No Adherent");
+            vBox.getChildren().addAll(hBox1, hBox2, hBox3);
 
-				lblMsg = new Label();
-				lblMsg.setFont(font(15));
-				HBox hBox1 = new HBox(), hBox2 = new HBox();
-				
-				hBox1.getChildren().addAll(textAdherent, textFieldAdherent);
-				hBox1.setSpacing(10);
-				hBox2.getChildren().add(lblMsg);
-				
-				vBox.getChildren().addAll(hBox1, hBox2);
-				
-				textFieldAdherent.setOnAction(new classConnexionAdherent());
-				//System.out.println(textAdherent.getText());
-			}
-		});
+            textFieldEmploye.setOnAction(new classConnexionEmploye());
+            passwordFieldEmploye.setOnAction(new classConnexionEmploye());
+        });
+		menuItemAdherent.setOnAction(event -> {
+            nouvellePersonne();
 
-		menuItemAide.setOnAction(new EventHandler<ActionEvent>() { /////////////////////////////////////////////////////////////////////////////
-			@Override
-			public void handle(ActionEvent event) {
+            if (event.getSource() instanceof MenuItem) textTitre.setText(retourneNomMenuItem(((MenuItem) event.getSource()).getText()));
 
-			}
-		});
+            textAdherent = new Text("No Adherent");
+
+            textAdherent.setFont(font(15));
+
+            textFieldAdherent = new TextField();
+
+            textFieldAdherent.setPromptText("No Adherent");
+
+            lblMsg = new Label();
+            lblMsg.setFont(font(15));
+            HBox hBox1 = new HBox(), hBox2 = new HBox();
+
+            hBox1.getChildren().addAll(textAdherent, textFieldAdherent);
+            hBox1.setSpacing(10);
+            hBox2.getChildren().add(lblMsg);
+
+            vBox.getChildren().addAll(hBox1, hBox2);
+
+            textFieldAdherent.setOnAction(new classConnexionAdherent());
+        });
+
+		/////////////////////////////////////////////////////////////////////////////
+		menuItemAide.setOnAction(event -> {
+
+        });
 	}
 	private class classConnexionEmploye implements EventHandler<ActionEvent> { // lorsque l'utilisateur est un employe et veut se connecter
 
@@ -347,21 +339,17 @@ public class Projet2 extends Application {
 		
 		menuDeconnexion.setMnemonicParsing(true);
 		
-		menuItemDeconnexion.setOnAction(new EventHandler<ActionEvent>() {
-
-			@Override
-			public void handle(ActionEvent event) {
-				// TODO Auto-generated method stub
-				deconnexion();
-			}
-		});
+		menuItemDeconnexion.setOnAction(event -> {
+            // TODO Auto-generated method stub
+            deconnexion();
+        });
 		
 		menuDeconnexion.getItems().add(menuItemDeconnexion);
 		menuBar.getMenus().add(menuDeconnexion);
 		
 		if (blnEmploye) { // Quand l'employe se connecte
 			methodeLstViewEmploye();
-			//methodeTableViewEmploye();
+			methodeTableViewEmploye();
 		} 
 		else { // Quand l'adherent se connecte
 			methodeTableViewAdherent();
@@ -428,65 +416,54 @@ public class Projet2 extends Application {
         //colonneSource.setHgrow(Priority.ALWAYS);
         //colonneDestination.setHgrow(Priority.ALWAYS);
         
-        btnDeplacerSource.setOnAction(new EventHandler<ActionEvent>() {
+        btnDeplacerSource.setOnAction(arg0 -> {
+            // TODO Auto-generated method stub
+            ObservableList<String> listeSelectionnee = lstViewEmployeSource.getSelectionModel().getSelectedItems();
 
-			@Override
-			public void handle(ActionEvent arg0) {
-				// TODO Auto-generated method stub
-				ObservableList<String> listeSelectionnee = lstViewEmployeSource.getSelectionModel().getSelectedItems();
-				
-				if (listeSelectionnee != null) {
-                    lstViewEmployeDestination.getItems().addAll(listeSelectionnee);
-                    lstViewEmployeSource.getItems().removeAll(listeSelectionnee);
+            if (listeSelectionnee != null) {
+				lstViewEmployeDestination.getItems().addAll(listeSelectionnee);
+				lstViewEmployeSource.getItems().removeAll(listeSelectionnee);
 
-                    lstViewEmployeSource.getSelectionModel().clearSelection();
-                    
-                    if (lstViewEmployeSource.getItems().size() == 0) btnDeplacerSource.setDisable(true);
-                    else btnDeplacerSource.setDisable(false);
-                    
-                    if (lstViewEmployeDestination.getItems().size() != 0) btnDeplacerDestination.setDisable(false);
-                }
+				lstViewEmployeSource.getSelectionModel().clearSelection();
+
+				if (lstViewEmployeSource.getItems().size() == 0) btnDeplacerSource.setDisable(true);
+				else btnDeplacerSource.setDisable(false);
+
+				if (lstViewEmployeDestination.getItems().size() != 0) btnDeplacerDestination.setDisable(false);
 			}
-		});
-        btnDeplacerDestination.setOnAction(new EventHandler<ActionEvent>() {
+        });
+        btnDeplacerDestination.setOnAction(event -> {
+            // TODO Auto-generated method stub
+            ObservableList<String> listeSelectionnee = lstViewEmployeDestination.getSelectionModel().getSelectedItems();
 
-			@Override
-			public void handle(ActionEvent event) {
-				// TODO Auto-generated method stub
-				ObservableList<String> listeSelectionnee = lstViewEmployeDestination.getSelectionModel().getSelectedItems();
-				
-				if (listeSelectionnee != null) {
-                    lstViewEmployeSource.getItems().addAll(listeSelectionnee);
-                    lstViewEmployeDestination.getItems().removeAll(listeSelectionnee);
+            if (listeSelectionnee != null) {
+				lstViewEmployeSource.getItems().addAll(listeSelectionnee);
+				lstViewEmployeDestination.getItems().removeAll(listeSelectionnee);
 
-                    lstViewEmployeDestination.getSelectionModel().clearSelection();
-                    
-                    if (lstViewEmployeDestination.getItems().size() == 0) btnDeplacerDestination.setDisable(true);
-                    else btnDeplacerDestination.setDisable(false);
-                    
-                    if (lstViewEmployeSource.getItems().size() != 0) btnDeplacerSource.setDisable(false);
-                }
+				lstViewEmployeDestination.getSelectionModel().clearSelection();
+
+				if (lstViewEmployeDestination.getItems().size() == 0) btnDeplacerDestination.setDisable(true);
+				else btnDeplacerDestination.setDisable(false);
+
+				if (lstViewEmployeSource.getItems().size() != 0) btnDeplacerSource.setDisable(false);
 			}
-		});
-        
-        listeObservable.addListener(new ListChangeListener<String>() { // Ajoute ou remove les adherents de la arrLstAdherent
+        });
 
-			@Override
-			public void onChanged(javafx.collections.ListChangeListener.Change<? extends String> c) {
-				// TODO Auto-generated method stub
-				while (c.next()) {
-					for (String strLstAdherentAdded : c.getAddedSubList()) arrLstAdherent.add(strLstAdherentAdded); // ajoute la valeur que contient c dans arrLstAdherent
-					for (String strLstAdherentRemoved : c.getRemoved()) arrLstAdherent.remove(strLstAdherentRemoved);
-					
-					arrLstAdherent = (ArrayList<String>) arrLstAdherent.stream().distinct().collect(Collectors.toList()); // remove duplicates, ex Guelleh Guelleh devient dans la array Guelleh. C'est pour accelerer le temps de comparaison lorsque l'adherent se connecte et eliminer les duplicates
-					Collections.sort(arrLstAdherent); // trie le arraylist
-					
-					/*System.out.println("arrLstAdherent");
-					for (String s : arrLstAdherent) System.out.println(s);
-					System.out.println();*/
-				}
-			}
-		});
+		// Ajoute ou remove les adherents de la arrLstAdherent
+		listeObservable.addListener((ListChangeListener<String>) c -> {
+            // TODO Auto-generated method stub
+            while (c.next()) {
+                for (String strLstAdherentAdded : c.getAddedSubList()) arrLstAdherent.add(strLstAdherentAdded); // ajoute la valeur que contient c dans arrLstAdherent
+                for (String strLstAdherentRemoved : c.getRemoved()) arrLstAdherent.remove(strLstAdherentRemoved);
+
+                arrLstAdherent = (ArrayList<String>) arrLstAdherent.stream().distinct().collect(Collectors.toList()); // remove duplicates, ex Guelleh Guelleh devient dans la array Guelleh. C'est pour accelerer le temps de comparaison lorsque l'adherent se connecte et eliminer les duplicates
+                Collections.sort(arrLstAdherent); // trie le arraylist
+
+                /*System.out.println("arrLstAdherent");
+                for (String s : arrLstAdherent) System.out.println(s);
+                System.out.println();*/
+            }
+        });
         
         gridPaneEmploye.add(lblSource, 0, 0);
         gridPaneEmploye.add(lstViewEmployeSource, 0, 1);
@@ -497,10 +474,12 @@ public class Projet2 extends Application {
         vBox.getChildren().add(gridPaneEmploye);
 	}
 	private void methodeTableViewEmploye() { // Pour permettre au prepose de voir la table, methode connexion ////////////////////////////////////////////////
+		ObservableList<Documents> observableList = FXCollections.observableArrayList(arrLivres);
+
 		group = new Group();
 
 		Text text = new Text();
-		text.setText("Liste de ");
+		text.setText("Liste des livres");
 		text.setFont(font(15));
 
 		VBox vBoxGroup = new VBox();
@@ -518,6 +497,13 @@ public class Projet2 extends Application {
 		colonneTitre.setPrefWidth(120);
 		colonneDate.setPrefWidth(120);
 		colonneEtat.setPrefWidth(120);
+		colonneEtat.setMaxWidth(colonneEtat.getPrefWidth());
+
+		colonneNumDoc.setCellValueFactory(new PropertyValueFactory<>("strNumDoc"));
+		colonneTitre.setCellValueFactory(new PropertyValueFactory<>("strTitre"));
+		colonneDate.setCellValueFactory(new PropertyValueFactory<>("strDate"));
+		colonneEtat.setCellValueFactory(new PropertyValueFactory<>("intPretEtat"));
+
 
 		TextField textFieldNoDocument = new TextField(), textFieldTitre = new TextField(), textFieldDate = new TextField(), textFieldEtat = new TextField();
 
@@ -525,19 +511,18 @@ public class Projet2 extends Application {
 		textFieldTitre.setPromptText("Titre");
 		textFieldDate.setPromptText("Date");
 		textFieldEtat.setPromptText("Etat");
+		tableView.setItems(observableList);
 
 		Button btnAjouter = new Button("Ajouter");
-		btnAjouter.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent event) {
+		btnAjouter.setOnAction(event -> {
 
-			}
-		});
+        });
 
 		hBoxGroup.getChildren().addAll(textFieldNoDocument, textFieldTitre, textFieldDate, textFieldEtat, btnAjouter);
 		vBoxGroup.getChildren().addAll(text, tableView, hBoxGroup);
 
-		vBoxGroup.getChildren().add(vBoxGroup);
+		group.getChildren().add(vBoxGroup);
+		vBox.getChildren().add(group);
 	}
 	private void methodeTableViewAdherent() { // Pour permettre a l'adherent de voir la table, les adherents, methode connexion
 		
