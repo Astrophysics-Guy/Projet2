@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4d7b9a0-4347-4c3b-8a47-bf7ac9fc91f2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Projet2.java" afterPath="$PROJECT_DIR$/src/application/Projet2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="31" column="6" lean-forward="false" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+              <caret line="31" column="6" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
               <folding>
                 <marker date="1510099776074" expanded="false" signature="3741:4510" ph="{...}" />
                 <marker date="1510099776074" expanded="false" signature="4539:5234" ph="{...}" />
@@ -493,7 +493,7 @@
     <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="31" column="6" lean-forward="false" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+          <caret line="31" column="6" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
           <folding>
             <marker date="1510099776074" expanded="false" signature="3741:4510" ph="{...}" />
             <marker date="1510099776074" expanded="false" signature="4539:5234" ph="{...}" />
