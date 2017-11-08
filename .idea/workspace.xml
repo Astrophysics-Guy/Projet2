@@ -4,7 +4,9 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4d7b9a0-4347-4c3b-8a47-bf7ac9fc91f2" name="Default" comment="" />
+    <list default="true" id="b4d7b9a0-4347-4c3b-8a47-bf7ac9fc91f2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build.properties" afterPath="" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +35,8 @@
       <file leaf-file-name="Projet2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="544" column="44" lean-forward="false" selection-start-line="544" selection-start-column="44" selection-end-line="544" selection-end-column="44" />
+            <state relative-caret-position="1540">
+              <caret line="553" column="0" lean-forward="true" selection-start-line="553" selection-start-column="0" selection-end-line="553" selection-end-column="0" />
               <folding>
                 <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
                 <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
@@ -452,10 +454,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Projet2.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="544" column="44" lean-forward="false" selection-start-line="544" selection-start-column="44" selection-end-line="544" selection-end-column="44" />
+        <state relative-caret-position="1540">
+          <caret line="553" column="0" lean-forward="true" selection-start-line="553" selection-start-column="0" selection-end-line="553" selection-end-column="0" />
           <folding>
             <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
             <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
