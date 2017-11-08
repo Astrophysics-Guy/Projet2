@@ -29,6 +29,7 @@ import javafx.scene.Scene;
 
 
 public class Projet2 extends Application {
+	/*
 	// Fichier ressource
 	private final String strNomFichier = "Donnees" + System.getProperty("file.separator"); // j utilise ubuntu
 
