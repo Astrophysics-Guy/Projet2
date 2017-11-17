@@ -4,24 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4d7b9a0-4347-4c3b-8a47-bf7ac9fc91f2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Donnees/build.fxbuild" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Donnees/build.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Donnees/build.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Donnees/module_projet2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Projet2$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Projet2$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Projet2$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Projet2$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Projet2$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Projet2$7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Projet2$8.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Projet2$1.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/Projet2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Projet2.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/Projet2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Projet2.java" afterPath="$PROJECT_DIR$/src/application/Projet2.java" />
-    </list>
+    <list default="true" id="b4d7b9a0-4347-4c3b-8a47-bf7ac9fc91f2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,8 +33,8 @@
       <file leaf-file-name="Projet2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1992">
-              <caret line="415" column="10" lean-forward="true" selection-start-line="415" selection-start-column="10" selection-end-line="415" selection-end-column="10" />
+            <state relative-caret-position="389">
+              <caret line="520" column="0" lean-forward="true" selection-start-line="520" selection-start-column="0" selection-end-line="520" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
@@ -62,6 +45,7 @@
                 <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
                 <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
                 <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
+                <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -71,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/src/application/Livres.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+              <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -153,6 +137,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,10 +152,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,14 +364,15 @@
             <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
             <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
             <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
+            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Documents.java">
+    <entry file="file://$PROJECT_DIR$/src/application/Livres.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="120">
+          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -406,42 +391,7 @@
             <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
             <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
             <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-            <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
-            <element signature="method#setOnAction#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
-            <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-            <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
-            <element signature="method#setOnAction#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
-            <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
+            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -450,7 +400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -468,6 +417,7 @@
             <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
             <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
             <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
+            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -486,6 +436,71 @@
             <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
             <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
             <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
+            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
+            <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
+            <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
+            <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
+            <element signature="method#setOnAction#0;class#Projet2#0" expanded="false" />
+            <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
+            <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
+            <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
+            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Documents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
+            <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
+            <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
+            <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
+            <element signature="method#setOnAction#0;class#Projet2#0" expanded="false" />
+            <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
+            <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
+            <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
+            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
+            <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
+            <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
+            <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
+            <element signature="method#setOnAction#0;class#Projet2#0" expanded="false" />
+            <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
+            <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
+            <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
+            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -511,6 +526,7 @@
             <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
             <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
             <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
+            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -614,22 +630,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Livres.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1992">
-          <caret line="415" column="10" lean-forward="true" selection-start-line="415" selection-start-column="10" selection-end-line="415" selection-end-column="10" />
+        <state relative-caret-position="389">
+          <caret line="520" column="0" lean-forward="true" selection-start-line="520" selection-start-column="0" selection-end-line="520" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
@@ -640,6 +655,7 @@
             <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
             <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
             <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
+            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
           </folding>
         </state>
       </provider>
