@@ -4,7 +4,16 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4d7b9a0-4347-4c3b-8a47-bf7ac9fc91f2" name="Default" comment="" />
+    <list default="true" id="b4d7b9a0-4347-4c3b-8a47-bf7ac9fc91f2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Login.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Projet2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Projet2$classConnexionAdherent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Projet2$classConnexionEmploye.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Projet2.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/application/Projet2.java" afterPath="$PROJECT_DIR$/src/application/MenuPrincipal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,25 +36,40 @@
     <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
     <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
+    <fileColor scope="Non-Project Files (Material Oceanic)" color="2E3C43" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Projet2.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
+      <file leaf-file-name="MenuPrincipal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="520" column="0" lean-forward="true" selection-start-line="520" selection-start-column="0" selection-end-line="520" selection-end-column="0" />
+            <state relative-caret-position="256">
+              <caret line="156" column="108" lean-forward="false" selection-start-line="156" selection-start-column="108" selection-end-line="156" selection-end-column="108" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
-                <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
-                <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-                <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
-                <element signature="method#setOnAction#0;class#Projet2#0" expanded="false" />
-                <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
-                <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
-                <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
-                <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
+                <element signature="e#2645#2646#0" expanded="true" />
+                <element signature="e#2695#2696#0" expanded="true" />
+                <element signature="e#2732#2733#0" expanded="true" />
+                <element signature="e#2790#2791#0" expanded="true" />
+                <element signature="e#9158#9159#0" expanded="true" />
+                <element signature="e#9278#9279#0" expanded="true" />
+                <element signature="method#lireDVD#0;class#MenuPrincipal#0" expanded="false" />
+                <element signature="method#lireLivres#0;class#MenuPrincipal#0" expanded="false" />
+                <element signature="method#lirePeriodiques#0;class#MenuPrincipal#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/application/Login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="77" column="42" lean-forward="false" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
+              <folding>
+                <element signature="e#6776#6777#0" expanded="true" />
+                <element signature="e#6843#6844#0" expanded="true" />
+                <element signature="e#6889#6890#0" expanded="true" />
+                <element signature="e#6917#6918#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,7 +78,7 @@
       <file leaf-file-name="Livres.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/Livres.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="-8">
               <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
               <folding />
             </state>
@@ -62,6 +86,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -74,12 +105,26 @@
       <find>textTitre</find>
       <find>Obser</find>
       <find>ObservableList</find>
+      <find>arrLstAdherent</find>
+      <find>vBoxMain</find>
+      <find>vBox</find>
+      <find>menuDeconnexion</find>
+      <find>menuItemDeconnexion</find>
+      <find>methodeLstViewEmploye</find>
+      <find>menuEtSetOnAction</find>
+      <find>menuPreposeEtSetOnAction</find>
+      <find>private</find>
+      <find>menuPre</find>
     </findStrings>
     <replaceStrings>
       <replace>strNomMenuItem</replace>
       <replace>textHaut</replace>
       <replace>textTitre</replace>
       <replace>colonneButton</replace>
+      <replace>arrLstAdherentAjoute</replace>
+      <replace>vBoxLogin</replace>
+      <replace>menuPreposeEtSetOnAction</replace>
+      <replace>menuPrepose</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -94,6 +139,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/application/Projet2.java" />
+        <option value="$PROJECT_DIR$/src/application/MenuPreposeAjoutAdherent.java" />
+        <option value="$PROJECT_DIR$/src/application/MenuPrepose.java" />
+        <option value="$PROJECT_DIR$/src/application/MenuPrincipal.java" />
+        <option value="$PROJECT_DIR$/src/application/Login.java" />
       </list>
     </option>
   </component>
@@ -137,8 +186,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
@@ -148,10 +195,23 @@
               <item name="Projet2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet2" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Projet2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -179,15 +239,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Projet2">
-    <configuration name="Projet2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Login">
+    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="application.Projet2" />
+      <option name="MAIN_CLASS_NAME" value="application.Login" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Projet2" />
+      <envs />
+    </configuration>
+    <configuration name="MenuPrincipal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="application.MenuPrincipal" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -280,9 +359,14 @@
       <properties />
       <listeners />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.MenuPrincipal" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Login" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.Projet2" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.Login" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MenuPrincipal" />
       </list>
     </recent_temporary>
   </component>
@@ -305,18 +389,19 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847682" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33697918" sideWeight="0.49460918" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33697918" sideWeight="0.49460918" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09583333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7549669" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -329,7 +414,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33697918" sideWeight="0.5053908" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7560647" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -337,34 +421,77 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/application/Projet2.java</url>
-          <line>358</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-            <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
-            <element signature="method#setOnAction#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
-            <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
-            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
+            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#9158#9159#0" expanded="true" />
+            <element signature="e#9278#9279#0" expanded="true" />
+            <element signature="method#lireDVD#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lireLivres#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lirePeriodiques#0;class#MenuPrincipal#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Livres.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#9158#9159#0" expanded="true" />
+            <element signature="e#9278#9279#0" expanded="true" />
+            <element signature="method#lireDVD#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lireLivres#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lirePeriodiques#0;class#MenuPrincipal#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Livres.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#9158#9159#0" expanded="true" />
+            <element signature="e#9278#9279#0" expanded="true" />
+            <element signature="method#lireDVD#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lireLivres#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lirePeriodiques#0;class#MenuPrincipal#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -377,21 +504,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-            <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
-            <element signature="method#setOnAction#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
-            <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
-            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
+            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#9158#9159#0" expanded="true" />
+            <element signature="e#9278#9279#0" expanded="true" />
+            <element signature="method#lireDVD#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lireLivres#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lirePeriodiques#0;class#MenuPrincipal#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -403,59 +529,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-            <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
-            <element signature="method#setOnAction#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
-            <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
-            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
+            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#9158#9159#0" expanded="true" />
+            <element signature="e#9278#9279#0" expanded="true" />
+            <element signature="method#lireDVD#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lireLivres#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lirePeriodiques#0;class#MenuPrincipal#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-            <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
-            <element signature="method#setOnAction#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
-            <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
-            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
+            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#9158#9159#0" expanded="true" />
+            <element signature="e#9278#9279#0" expanded="true" />
+            <element signature="method#lireDVD#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lireLivres#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lirePeriodiques#0;class#MenuPrincipal#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-            <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
-            <element signature="method#setOnAction#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
-            <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
-            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
+            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#9158#9159#0" expanded="true" />
+            <element signature="e#9278#9279#0" expanded="true" />
+            <element signature="method#lireDVD#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lireLivres#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lirePeriodiques#0;class#MenuPrincipal#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -467,40 +590,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-            <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
-            <element signature="method#setOnAction#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
-            <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
-            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
+            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#9158#9159#0" expanded="true" />
+            <element signature="e#9278#9279#0" expanded="true" />
+            <element signature="method#lireDVD#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lireLivres#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lirePeriodiques#0;class#MenuPrincipal#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-            <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
-            <element signature="method#setOnAction#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
-            <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
-            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
+            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#9158#9159#0" expanded="true" />
+            <element signature="e#9278#9279#0" expanded="true" />
+            <element signature="method#lireDVD#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lireLivres#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lirePeriodiques#0;class#MenuPrincipal#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -512,21 +633,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-            <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
-            <element signature="method#setOnAction#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
-            <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
-            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
+            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#9158#9159#0" expanded="true" />
+            <element signature="e#9278#9279#0" expanded="true" />
+            <element signature="method#lireDVD#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lireLivres#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lirePeriodiques#0;class#MenuPrincipal#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -619,13 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/event/EventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Documents.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -635,27 +748,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Livres.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="-8">
           <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Projet2.java">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/event/EventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="520" column="0" lean-forward="true" selection-start-line="520" selection-start-column="0" selection-end-line="520" selection-end-column="0" />
+        <state relative-caret-position="504">
+          <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1968">
+          <caret line="129" column="27" lean-forward="false" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#lireDVD#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lireLivres#0;class#Projet2#0" expanded="false" />
-            <element signature="method#lirePeriodiques#0;class#Projet2#0" expanded="false" />
-            <element signature="method#nouvellePersonne#0;class#Projet2#0" expanded="false" />
-            <element signature="method#setOnAction#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionEmploye#0;class#Projet2#0" expanded="false" />
-            <element signature="class#classConnexionAdherent#0;class#Projet2#0" expanded="false" />
-            <element signature="method#deconnexion#0;class#Projet2#0" expanded="false" />
-            <element signature="method#methodeLstViewEmploye#0;class#Projet2#0" expanded="false" />
+            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#9158#9159#0" expanded="true" />
+            <element signature="e#9278#9279#0" expanded="true" />
+            <element signature="method#lireDVD#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lireLivres#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lirePeriodiques#0;class#MenuPrincipal#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="156" column="108" lean-forward="false" selection-start-line="156" selection-start-column="108" selection-end-line="156" selection-end-column="108" />
+          <folding>
+            <element signature="e#2645#2646#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#9158#9159#0" expanded="true" />
+            <element signature="e#9278#9279#0" expanded="true" />
+            <element signature="method#lireDVD#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lireLivres#0;class#MenuPrincipal#0" expanded="false" />
+            <element signature="method#lirePeriodiques#0;class#MenuPrincipal#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="77" column="42" lean-forward="false" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
+          <folding>
+            <element signature="e#6776#6777#0" expanded="true" />
+            <element signature="e#6843#6844#0" expanded="true" />
+            <element signature="e#6889#6890#0" expanded="true" />
+            <element signature="e#6917#6918#0" expanded="true" />
           </folding>
         </state>
       </provider>
