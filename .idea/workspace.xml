@@ -5,48 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4d7b9a0-4347-4c3b-8a47-bf7ac9fc91f2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/Login_OLD.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/application/Projet2$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/application/Projet2$1$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/application/Projet2$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/application/Projet2$2$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/application/Projet2$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/application/Projet2$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/application/Projet2$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/application/Projet2$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/application/Projet2$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/application/Projet2$7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/application/Projet2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/application/Login.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/application/MenuPrincipal.java" afterPath="$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/application/Adherents.class" afterPath="$PROJECT_DIR$/bin/application/Adherents.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/application/Amendes.class" afterPath="$PROJECT_DIR$/bin/application/Amendes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/application/DVD.class" afterPath="$PROJECT_DIR$/bin/application/DVD.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/application/Livres.class" afterPath="$PROJECT_DIR$/bin/application/Livres.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/application/Periodiques.class" afterPath="$PROJECT_DIR$/bin/application/Periodiques.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/application/Personnes.class" afterPath="$PROJECT_DIR$/bin/application/Personnes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/application/Preposes.class" afterPath="$PROJECT_DIR$/bin/application/Preposes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/application/Pret.class" afterPath="$PROJECT_DIR$/bin/application/Pret.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Adherents.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/Adherents.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Amendes.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/Amendes.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Donnees/dvd.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login$1classConnexionAdherent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login$1classConnexionEmploye.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login_BackUp$1classConnexionAdherent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login_BackUp$1classConnexionEmploye.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login_BackUp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login_Ismail$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login_Ismail$1classConnexion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login_Ismail.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/MenuPrincipal_BackUp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/MenuPrincipal_Imail.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/ModifierDocument$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/ModifierDocument$GestionComboBox.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/ModifierDocument.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/dvd.ser" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/application/Login_BackUp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/application/Login_OLD.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/application/MenuPrincipal_BackUp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/application/ModifierDocument.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/DVD.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/DVD.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Documents.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/Documents.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Livres.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/Livres.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/Login.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/MenuPrincipal.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/MenuPrincipal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/ModificationDocument$GestionComboBox.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/ModificationDocument$GestionComboBox.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/ModificationDocument.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/ModificationDocument.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Periodiques.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/Periodiques.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Personnes.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/Personnes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Preposes.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/Preposes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Pret.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/Pret.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet2.iml" afterPath="$PROJECT_DIR$/Projet2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Adherents.java" afterPath="$PROJECT_DIR$/src/application/Adherents.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Amendes.java" afterPath="$PROJECT_DIR$/src/application/Amendes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/DVD.java" afterPath="$PROJECT_DIR$/src/application/DVD.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Documents.java" afterPath="$PROJECT_DIR$/src/application/Documents.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Livres.java" afterPath="$PROJECT_DIR$/src/application/Livres.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/MenuPrincipal.java" afterPath="$PROJECT_DIR$/src/application/MenuPrincipal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/ModificationDocument.java" afterPath="$PROJECT_DIR$/src/application/ModificationDocument.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Periodiques.java" afterPath="$PROJECT_DIR$/src/application/Periodiques.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Personnes.java" afterPath="$PROJECT_DIR$/src/application/Personnes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Preposes.java" afterPath="$PROJECT_DIR$/src/application/Preposes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Pret.java" afterPath="$PROJECT_DIR$/src/application/Pret.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,22 +65,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MenuPrincipal_OLD.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+            <state relative-caret-position="387">
+              <caret line="243" column="12" lean-forward="true" selection-start-line="243" selection-start-column="12" selection-end-line="243" selection-end-column="12" />
               <folding>
+                <element signature="e#878#879#0" expanded="true" />
                 <element signature="e#897#898#0" expanded="true" />
               </folding>
             </state>
@@ -99,42 +81,25 @@
       <file leaf-file-name="MenuPrincipal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2592">
-              <caret line="86" column="33" lean-forward="false" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModificationDocument.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/ModificationDocument.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+            <state relative-caret-position="-45">
+              <caret line="227" column="87" lean-forward="false" selection-start-line="227" selection-start-column="87" selection-end-line="227" selection-end-column="87" />
               <folding>
-                <element signature="e#4451#4452#0" expanded="true" />
-                <element signature="e#4509#4510#0" expanded="true" />
+                <element signature="e#6452#6453#0" expanded="true" />
+                <element signature="e#6510#6511#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeserialiseObjets.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/DeserialiseObjets.java">
+      <file leaf-file-name="ModificationDocument.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/application/ModificationDocument.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SerialiseObjets.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/SerialiseObjets.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="264">
+              <caret line="45" column="64" lean-forward="false" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+              <folding>
+                <element signature="e#4963#4964#0" expanded="true" />
+                <element signature="e#5030#5031#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,16 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lblMsg</find>
-      <find>colonne2</find>
-      <find>Obser</find>
-      <find>ObservableList</find>
-      <find>arrLstAdherent</find>
-      <find>vBoxMain</find>
-      <find>vBox</find>
-      <find>menuDeconnexion</find>
-      <find>menuItemDeconnexion</find>
-      <find>methodeLstViewEmploye</find>
       <find>menuEtSetOnAction</find>
       <find>menuPreposeEtSetOnAction</find>
       <find>private</find>
@@ -173,13 +128,23 @@
       <find>textTi</find>
       <find>border</find>
       <find>intNbDisques</find>
-      <find>int</find>
       <find>intPretEtat</find>
       <find>Integer.</find>
       <find>strVerifUtil</find>
       <find>.setOnAc</find>
       <find>.setOnAct</find>
       <find>textTitre</find>
+      <find>int</find>
+      <find>Int</find>
+      <find>.toString()</find>
+      <find>intPeriodiques</find>
+      <find>intLivres</find>
+      <find>intDVD</find>
+      <find>i</find>
+      <find>intDVDNoDocMax</find>
+      <find>strDVDNoDocMax</find>
+      <find>strLivresNoDocMax</find>
+      <find>strPeriodiquesNoDocMax</find>
     </findStrings>
     <replaceStrings>
       <replace>strNomMenuItem</replace>
@@ -193,6 +158,15 @@
       <replace>strNbDisques</replace>
       <replace>String</replace>
       <replace>strPretEtat</replace>
+      <replace>Str</replace>
+      <replace>str</replace>
+      <replace>strPeriodiquesNoDocMax</replace>
+      <replace>strLivresNoDocMax</replace>
+      <replace>strDVDNoDocMax</replace>
+      <replace>intChoixDoc</replace>
+      <replace>intDVDNoDocMax</replace>
+      <replace>intLivresNoDocMax</replace>
+      <replace>intPeriodiquesNoDocMax</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -212,18 +186,18 @@
         <option value="$PROJECT_DIR$/src/application/Preposes.java" />
         <option value="$PROJECT_DIR$/src/application/DeserialisePersonnes.java" />
         <option value="$PROJECT_DIR$/src/application/SerialisePersonnes.java" />
-        <option value="$PROJECT_DIR$/src/application/Documents.java" />
-        <option value="$PROJECT_DIR$/src/application/DVD.java" />
         <option value="$PROJECT_DIR$/src/application/Livres.java" />
-        <option value="$PROJECT_DIR$/src/application/Periodiques.java" />
         <option value="$PROJECT_DIR$/src/application/MenuPrincipal_BackUp.java" />
-        <option value="$PROJECT_DIR$/src/application/MenuPrincipal.java" />
         <option value="$PROJECT_DIR$/src/application/SerialiseObjets.java" />
         <option value="$PROJECT_DIR$/src/application/DeserialiseObjets.java" />
         <option value="$PROJECT_DIR$/src/application/MenuPrincipal_Imail.java" />
-        <option value="$PROJECT_DIR$/src/application/ModificationDocument.java" />
         <option value="$PROJECT_DIR$/src/application/Login_Ismail.java" />
+        <option value="$PROJECT_DIR$/src/application/Documents.java" />
+        <option value="$PROJECT_DIR$/src/application/DVD.java" />
+        <option value="$PROJECT_DIR$/src/application/Periodiques.java" />
         <option value="$PROJECT_DIR$/src/application/Login.java" />
+        <option value="$PROJECT_DIR$/src/application/MenuPrincipal.java" />
+        <option value="$PROJECT_DIR$/src/application/ModificationDocument.java" />
       </list>
     </option>
   </component>
@@ -508,6 +482,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1926" height="864" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -522,7 +497,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.118229166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.118229166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.754717" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -829,78 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/DVD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="108" lean-forward="false" selection-start-line="19" selection-start-column="108" selection-end-line="19" selection-end-column="108" />
-          <folding>
-            <element signature="e#790#791#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Documents.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-            <element signature="e#811#812#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#874#875#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#1005#1006#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Livres.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="73" lean-forward="false" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
-          <folding>
-            <marker date="1511490717164" expanded="false" signature="650:655" ph=" { " />
-            <marker date="1511490717164" expanded="false" signature="675:678" ph=" }" />
-            <marker date="1511490717164" expanded="false" signature="728:733" ph=" { " />
-            <marker date="1511490717164" expanded="false" signature="766:769" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Periodiques.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_BackUp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -917,14 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/DeserialiseObjets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/SerialiseObjets.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -933,31 +828,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
+    <entry file="file://$PROJECT_DIR$/src/application/ModifierDocument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2592">
-          <caret line="86" column="33" lean-forward="false" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+        <state relative-caret-position="-4725">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/ModificationDocument.java">
+    <entry file="file://$PROJECT_DIR$/src/application/DeserialiseObjets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+        <state relative-caret-position="96">
+          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Livres.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/DVD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
           <folding>
-            <element signature="e#4451#4452#0" expanded="true" />
-            <element signature="e#4509#4510#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Periodiques.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding>
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Documents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        <state relative-caret-position="387">
+          <caret line="243" column="12" lean-forward="true" selection-start-line="243" selection-start-column="12" selection-end-line="243" selection-end-column="12" />
           <folding>
+            <element signature="e#878#879#0" expanded="true" />
             <element signature="e#897#898#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="227" column="87" lean-forward="false" selection-start-line="227" selection-start-column="87" selection-end-line="227" selection-end-column="87" />
+          <folding>
+            <element signature="e#6452#6453#0" expanded="true" />
+            <element signature="e#6510#6511#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/ModificationDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="45" column="64" lean-forward="false" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+          <folding>
+            <element signature="e#4963#4964#0" expanded="true" />
+            <element signature="e#5030#5031#0" expanded="true" />
           </folding>
         </state>
       </provider>

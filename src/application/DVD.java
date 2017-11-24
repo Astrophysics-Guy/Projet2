@@ -7,8 +7,8 @@ public class DVD extends Documents implements Serializable {
 	private String strNomRealisateur;
 	private String strNbDisques;
 	
-	public DVD(String strNumDoc, String strTitre, String strDate, String intPret, String strNbDisques, String strNomRealisateur) {
-		super(strNumDoc, strTitre, strDate, intPret);
+	public DVD(String strNumDoc, String strTitre, String strDate, String strPret, String strNbDisques, String strNomRealisateur) {
+		super(strNumDoc, strTitre, strDate, strPret);
 			
 		this.strNomRealisateur = strNomRealisateur;
 		this.strNbDisques = strNbDisques;
@@ -17,7 +17,7 @@ public class DVD extends Documents implements Serializable {
 	@Override
 	public String toString() {
 		return "DVD [strNomRealisateur=" + strNomRealisateur + ", strNbDisques=" + strNbDisques + ", strNumDoc="
-				+ strNumDoc + ", strTitre=" + strTitre + ", strDate=" + strDate + ", intPret=" + strPretEtat + "]";
+				+ strNumDoc + ", strTitre=" + strTitre + ", strDate=" + strDate + ", strPret=" + strPretEtat + "]";
 	}
 	
 	public String getStrNomRealisateur() {
@@ -27,10 +27,10 @@ public class DVD extends Documents implements Serializable {
 		this.strNomRealisateur = strNomRealisateur;
 	}
 
-	public String getIntNbDisques() {
+	public String getStrNbDisques() {
 		return strNbDisques;
 	}
-	public void setIntNbDisques(String strNbDisques) {
+	public void setStrNbDisques(String strNbDisques) {
 		this.strNbDisques = strNbDisques;
 	}
 }

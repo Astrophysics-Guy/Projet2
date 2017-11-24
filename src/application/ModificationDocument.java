@@ -1,5 +1,7 @@
 package application;
 
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.geometry.Insets;
@@ -18,11 +20,14 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 import java.util.ArrayList;
 
 public class ModificationDocument extends Stage {
-	private String[] strDocuments = {"DVD", "Livres", "Periodiques"};
+	// pour le nombre max d'enregistrement deja present
+	private int intDVDNoDocMax, intLivresNoDocMax, intPeriodiquesNoDocMax;
+	private final String[] strDocuments = {"DVD", "Livres", "Periodiques"};
 
 	private Text text, textDoc;
 	private TextField textFieldNoDoc, textFieldTitre, textFieldDate;
@@ -35,8 +40,10 @@ public class ModificationDocument extends Stage {
 	private ArrayList<Livres> arrLivreSerialise;
 	private ArrayList<Periodiques> arrPeriodiquesSerialise;
 
-	public ModificationDocument(int i) {
-		//this.primaryStage = primaryStage;
+	public ModificationDocument(int intChoixDoc, int intDVDNoDocMax, int intLivresNoDocMax, int intPeriodiquesNoDocMax) {
+		this.intDVDNoDocMax = intDVDNoDocMax + 1;
+		this.intLivresNoDocMax = intLivresNoDocMax + 1;
+		this.intPeriodiquesNoDocMax = intPeriodiquesNoDocMax + 1;
 
 		BorderPane root = new BorderPane();
 		Scene scene = new Scene(root,675,450); // 1.5 aspect ratio
@@ -82,10 +89,11 @@ public class ModificationDocument extends Stage {
 
 		Text textNoDoc, textTitre, textDate;
 
-		textNoDoc = new Text("No Document");
+		textNoDoc = new Text("No Document\t\t\t\t\t\t");
 		textTitre = new Text("Titre\t\t\t\t\t\t\t");
 		textDate = new Text("Date\t\t\t\t\t\t\t\t");
 
+		textNoDoc.setFont(font(15));
 		textTitre.setFont(font(15));
 		textDate.setFont(font(15));
 
@@ -93,26 +101,27 @@ public class ModificationDocument extends Stage {
 		textFieldTitre = new TextField();
 		textFieldDate = new TextField();
 
-		textFieldNoDoc.setText(""); //////////////////////////////////////////
+		textFieldNoDoc.setText("DVD" + intDVDNoDocMax);
+		textFieldNoDoc.setEditable(false);
 		textFieldTitre.setPromptText("Titre");
 		textFieldDate.setPromptText("Date");
 
 		hBoxNoDoc.getChildren().addAll(textNoDoc, textFieldNoDoc);
-		hBoxTitre.getChildren().addAll(textNoDoc, textTitre, textFieldTitre);
+		hBoxTitre.getChildren().addAll(textTitre, textFieldTitre);
 		hBoxDate.getChildren().addAll(textDate, textFieldDate);
 
 		btnDoc = new Button();
 		btnDoc.setFont(font(15));
 
-		if (i == 0) ajouterDoc();
-		else if (i == 1) modifierDoc();
-		else if (i == 2) supprimerDoc();
+		if (intChoixDoc == 0) ajouterDoc();
+		else if (intChoixDoc == 1) modifierDoc();
+		else if (intChoixDoc == 2) supprimerDoc();
 
 		docDVD();
 
 		hBoxComboBox.getChildren().addAll(textDoc, comboBox);
 
-		vBoxDocInitial.getChildren().addAll(hBoxTitre, hBoxDate);
+		vBoxDocInitial.getChildren().addAll(hBoxNoDoc, hBoxTitre, hBoxDate);
 
 		vBoxDocuments.getChildren().addAll(vBoxDocInitial, vBoxDocVariable, btnDoc);
 
@@ -151,8 +160,8 @@ public class ModificationDocument extends Stage {
 	}
 
 	private Font font(int intSize) {
-		return Font.font("Serif", FontWeight.BOLD, intSize);
-	}
+        return Font.font("Serif", FontWeight.BOLD, intSize);
+    }
 	private class GestionComboBox implements ChangeListener<String> {
 		@Override
 		public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
@@ -164,12 +173,15 @@ public class ModificationDocument extends Stage {
 			if (btnDoc != null) vBoxCentre.getChildren().remove(btnDoc);
 
 			if (newValue.equals(strDocuments[0])) {
+				textFieldNoDoc.setText("DVD" + intDVDNoDocMax);
 				docDVD();
 			}
 			else if (newValue.equals(strDocuments[1])) {
+				textFieldNoDoc.setText("Liv" + intLivresNoDocMax);
 				docLivre();
 			}
 			else if (newValue.equals(strDocuments[2])) {
+				textFieldNoDoc.setText("Per" + intPeriodiquesNoDocMax);
 				docPeriodique();
 			}
 
@@ -178,9 +190,9 @@ public class ModificationDocument extends Stage {
 		}
 	}
 	private Border border(Color color) {
-		return new Border(new BorderStroke(color, new BorderStrokeStyle(StrokeType.INSIDE, StrokeLineJoin.BEVEL, StrokeLineCap.BUTT, 10, 0, null), CornerRadii.EMPTY,  new BorderWidths(2)));
-	}
-	private Background background(Color color) {
+    	return new Border(new BorderStroke(color, new BorderStrokeStyle(StrokeType.INSIDE, StrokeLineJoin.BEVEL, StrokeLineCap.BUTT, 10, 0, null), CornerRadii.EMPTY,  new BorderWidths(2)));
+    }
+    private Background background(Color color) {
 		return new Background(new BackgroundFill(color, CornerRadii.EMPTY, Insets.EMPTY));
 	}
 

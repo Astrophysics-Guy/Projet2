@@ -17,13 +17,27 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
 import java.util.Optional;
+import java.util.StringTokenizer;
 
 public class MenuPrincipal extends Stage {
 	// Fichier ressource
 	private final String strNomFichier = "Donnees" + System.getProperty("file.separator"); // j
 	// utilise
 	// ubuntu
+
+	// Pour les documents
+	private ArrayList<DVD> arrDVD = new ArrayList<>();
+	private ArrayList<Livres> arrLivres = new ArrayList<>();
+	private ArrayList<Periodiques> arrPeriodiques = new ArrayList<>();
+
+	// pour le nombre max d'enregistrement deja present
+	private int intDVDNoDocMax, intLivresNoDocMax, intPeriodiquesNoDocMax;
+
 	// le stage du login
 	private Stage primaryStage;
 
@@ -37,11 +51,14 @@ public class MenuPrincipal extends Stage {
 		// view
 		this.primaryStage = primaryStage;
 
+		lireDVD();
+		lireLivres();
+		lirePeriodiques();
+
 		menuPrincipal();
 	}
 
 	public void menuPrincipal() {
-
 		BorderPane root = new BorderPane();
 		Scene scene = new Scene(root, 1200, 900); // 1.5 aspect ratio
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
@@ -83,7 +100,7 @@ public class MenuPrincipal extends Stage {
 
 		//droite(hBoxMain);
 
-		menu(root, this);
+		menu(root);
 		root.setCenter(hBoxMain);
 
 		this.sizeToScene();
@@ -99,67 +116,7 @@ public class MenuPrincipal extends Stage {
 		});
 	}
 
-	private void deconnexion(boolean blnPrepose) {
-		this.close();
-		primaryStage.show();
-	}
-	
-	/*private void droite(HBox hBoxMain) {
-		VBox vBoxDroite = new VBox();
-		vBoxDroite.setAlignment(Pos.CENTER);
-		vBoxDroite.setSpacing(20);
-		vBoxDroite.setPadding(new Insets(10));
-		//vBoxDroite.setMinWidth(550);
-		//vBoxDroite.setMinHeight(scene.getHeight());
-		
-		VBox vBoxInformation = new VBox();
-		Text textInfo = new Text("Informations sur l'onglet");
-		
-		vBoxInformation.getChildren().add(textInfo);
-		
-		VBox vBoxRecherche = new VBox();
-		TextArea textAreaRecherche = new TextArea();
-		textAreaRecherche.setWrapText(true);
-		textAreaRecherche.setTooltip(new Tooltip("Rechercher un document"));
-		
-		vBoxRecherche.getChildren().add(textAreaRecherche);
-		
-		VBox vBoxActions = new VBox();
-		vBoxActions.setSpacing(10);
-		
-		vBoxActions.setBorder(border(Color.BLACK));
-		
-		VBox vBoxButtonDocument = new VBox();
-		vBoxButtonDocument.setSpacing(5);
-		
-		Button btnAjouterDoc = new Button("Ajouter un document");
-		Button btnModidifierDoc = new Button("Modifier un document");
-		
-		vBoxButtonDocument.getChildren().addAll(btnAjouterDoc, btnModidifierDoc);
-		
-		VBox vBoxButtonAdherent = new VBox();
-		vBoxButtonAdherent.setSpacing(5);
-		
-		Button btnGererAdherents = new Button("Gerer les adherents");
-		 
-		vBoxButtonAdherent.getChildren().add(btnGererAdherents);
-		
-		VBox vBoxButtonPretEtRetour = new VBox();
-		vBoxButtonPretEtRetour.setSpacing(5);
-		
-		Button btnPret = new Button("Gerer un pret");
-		Button btnRetour = new Button("Gerer un retour");
-		
-		vBoxButtonPretEtRetour.getChildren().addAll(btnPret, btnRetour);
-		
-		vBoxActions.getChildren().addAll(vBoxButtonDocument, vBoxButtonAdherent, vBoxButtonPretEtRetour);
-		
-		vBoxDroite.getChildren().addAll(vBoxInformation, vBoxRecherche, vBoxActions);
-		
-		hBoxMain.getChildren().add(vBoxDroite);
-	}*/
-
-	private void menu(BorderPane root, Stage stage) {
+	private void menu(BorderPane root) {
 		// Bar
 		MenuBar menuBar = new MenuBar();
 
@@ -186,15 +143,15 @@ public class MenuPrincipal extends Stage {
 		// setOnAction des menuItems
 		menuItemAjouterDoc.setOnAction(t -> {
 			t.consume();
-			new ModificationDocument(0).show();
+			new ModificationDocument(0, intDVDNoDocMax, intLivresNoDocMax, intPeriodiquesNoDocMax).show();
 		});
 		menuItemModifierDoc.setOnAction(t -> {
 			t.consume();
-			new ModificationDocument(1).show();
+			new ModificationDocument(1, intDVDNoDocMax, intLivresNoDocMax, intPeriodiquesNoDocMax).show();
 		});
 		menuItemSupprimerDoc.setOnAction(t -> {
 			t.consume();
-			new ModificationDocument(2).show();
+			new ModificationDocument(2, intDVDNoDocMax, intLivresNoDocMax, intPeriodiquesNoDocMax).show();
 		});
 
 		menuItemAdherent.setOnAction(t -> { ////////////////////////////////////////////////////
@@ -245,6 +202,88 @@ public class MenuPrincipal extends Stage {
 			stage.close();
 		} else {
 			// ... user chose CANCEL or closed the dialog
+		}
+	}
+
+	private void lireDVD() { // lit le fichier dvd
+		BufferedReader brFichier = null;
+
+		try {
+			brFichier = new BufferedReader(new FileReader(strNomFichier + "DVD.txt"));
+		}
+		catch (FileNotFoundException e){
+
+			e.printStackTrace();
+		}
+
+		try {
+			String strLigne;
+
+			while ((strLigne = brFichier.readLine()) != null) {
+				StringTokenizer st = new StringTokenizer(strLigne, ",");
+				arrDVD.add(new DVD(st.nextToken().trim(), st.nextToken().trim(), st.nextToken().trim(), "0", st.nextToken().trim(), st.nextToken().trim()));
+			}
+			//for (int i = 0; i < arrDVD.size(); i++) System.out.println(arrDVD.get(i));
+			String strNumDoc = arrDVD.get(arrDVD.size()-1).getStrNumDoc();
+			intDVDNoDocMax = Integer.parseInt(strNumDoc.substring(3, strNumDoc.length()));
+		}
+		catch (Exception e) {
+			//System.out.println(e);
+			e.printStackTrace();
+		}
+	}
+
+	private void lireLivres() { // lit le fichier livre
+		BufferedReader brFichier = null;
+
+		try {
+			brFichier = new BufferedReader(new FileReader(strNomFichier + "Livres.txt"));
+		}
+		catch (FileNotFoundException e){
+
+			e.printStackTrace();
+		}
+
+		try {
+			String strLigne;
+
+			while ((strLigne = brFichier.readLine()) != null) {
+				StringTokenizer st = new StringTokenizer(strLigne, ",");
+				arrLivres.add(new Livres(st.nextToken().trim(), st.nextToken().trim(), st.nextToken().trim(), "0", st.nextToken().trim()));
+			}
+			//for (int i = 0; i < arrLivres.size(); i++) System.out.println(arrLivres.get(i));
+			String strNumDoc = arrLivres.get(arrLivres.size()-1).getStrNumDoc();
+			intLivresNoDocMax = Integer.parseInt(strNumDoc.substring(3, strNumDoc.length()));
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void lirePeriodiques() { // lit le fichier periodique
+		BufferedReader brFichier = null;
+
+		try {
+			brFichier = new BufferedReader(new FileReader(strNomFichier + "Periodiques.txt"));
+		}
+		catch (FileNotFoundException e){
+
+			e.printStackTrace();
+		}
+
+		try {
+			String strLigne;
+
+			while ((strLigne = brFichier.readLine()) != null) {
+				StringTokenizer st = new StringTokenizer(strLigne, ",");
+				arrPeriodiques.add(new Periodiques(st.nextToken().trim(), st.nextToken().trim(), st.nextToken().trim(), "0", st.nextToken().trim(), st.nextToken().trim()));
+			}
+			//for (int i = 0; i < arrPeriodiques.size(); i++) System.out.println(arrPeriodiques.get(i));
+			String strNumDoc = arrPeriodiques.get(arrPeriodiques.size()-1).getStrNumDoc();
+			intPeriodiquesNoDocMax = Integer.parseInt(strNumDoc.substring(3, strNumDoc.length()));
+		}
+		catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 }

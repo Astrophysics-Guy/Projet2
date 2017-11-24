@@ -36,10 +36,10 @@ public class Documents implements Serializable {
 		this.strDate = strDate;
 	}
 
-	public String getIntPret() {
+	public String getStrPret() {
 		return strPretEtat;
 	}
-	public void setIntPret(String strPretEtat) {
+	public void setStrPret(String strPretEtat) {
 		this.strPretEtat = strPretEtat;
 	}
 }
