@@ -1,20 +1,23 @@
 package application;
 
-public class DVD extends Documents {
-	String strNomRealisateur;
-	int intNbDisques;
+import java.io.Serializable;
+
+public class DVD extends Documents implements Serializable {
+	private static final long serialVersionUID = 1L;
+	private String strNomRealisateur;
+	private String strNbDisques;
 	
-	public DVD(String strNumDoc, String strTitre, String strDate, int intPret, int intNbDisques, String strNomRealisateur) {
+	public DVD(String strNumDoc, String strTitre, String strDate, String intPret, String strNbDisques, String strNomRealisateur) {
 		super(strNumDoc, strTitre, strDate, intPret);
 			
 		this.strNomRealisateur = strNomRealisateur;
-		this.intNbDisques = intNbDisques;
+		this.strNbDisques = strNbDisques;
 	}
 	
 	@Override
 	public String toString() {
-		return "DVD [strNomRealisateur=" + strNomRealisateur + ", intNbDisques=" + intNbDisques + ", strNumDoc="
-				+ strNumDoc + ", strTitre=" + strTitre + ", strDate=" + strDate + ", intPret=" + intPretEtat + "]";
+		return "DVD [strNomRealisateur=" + strNomRealisateur + ", strNbDisques=" + strNbDisques + ", strNumDoc="
+				+ strNumDoc + ", strTitre=" + strTitre + ", strDate=" + strDate + ", intPret=" + strPretEtat + "]";
 	}
 	
 	public String getStrNomRealisateur() {
@@ -24,10 +27,10 @@ public class DVD extends Documents {
 		this.strNomRealisateur = strNomRealisateur;
 	}
 
-	public int getIntNbDisques() {
-		return intNbDisques;
+	public String getIntNbDisques() {
+		return strNbDisques;
 	}
-	public void setIntNbDisques(int intNbDisques) {
-		this.intNbDisques = intNbDisques;
+	public void setIntNbDisques(String strNbDisques) {
+		this.strNbDisques = strNbDisques;
 	}
 }

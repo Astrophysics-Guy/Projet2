@@ -1,8 +1,9 @@
 package application;
 
 public class Amendes {
-	String strNo, strEtat;
-	int intMontant;
+	private String strNo, strEtat;
+	private int intMontant;
+	
 	public Amendes(String strNo, String strEtat, int intMontant) {
 		super();
 		this.strNo = strNo;

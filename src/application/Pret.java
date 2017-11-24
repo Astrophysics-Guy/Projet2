@@ -1,7 +1,7 @@
 package application;
 
 public class Pret {
-	String strPret, strDateDuJour, strDateRetourPrevue, strDateEffectiveRetour;
+	private String strPret, strDateDuJour, strDateRetourPrevue, strDateEffectiveRetour;
 
 	public Pret(String strPret, String strDateDuJour, String strDateRetourPrevue, String strDateEffectiveRetour) {
 		this.strPret = strPret;

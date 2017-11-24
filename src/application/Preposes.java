@@ -1,7 +1,11 @@
 package application;
 
-public class Preposes extends Personnes {
-	String strNoEmploye, strMotDePasse;
+import java.io.Serializable;
+
+public class Preposes extends Personnes implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
+	private String strNoEmploye, strMotDePasse;
 
 	public Preposes(String strNom, String strPrenom, String strAdresse, String strTel, String strNoEmploye, String strMotDePasse) {
 		super(strNom, strPrenom, strAdresse, strTel);
@@ -22,5 +26,10 @@ public class Preposes extends Personnes {
 	}
 	public void setStrMotDePasse(String strMotDePasse) {
 		this.strMotDePasse = strMotDePasse;
+	}
+
+	//@Override
+	public String toString() {
+		return "Preposes [strNoEmploye=" + strNoEmploye + ", strMotDePasse=" + strMotDePasse + "]";
 	} 
 }

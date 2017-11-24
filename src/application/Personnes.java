@@ -1,7 +1,13 @@
 package application;
 
-public class Personnes {
-	String strNom, strPrenom, strAdresse, strTel;
+import java.io.Serializable;
+
+public class Personnes implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String strNom, strPrenom, strAdresse, strTel;
 
 	public Personnes(String strNom, String strPrenom, String strAdresse, String strTel) {
 		this.strNom = strNom;

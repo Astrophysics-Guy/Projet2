@@ -1,14 +1,17 @@
 package application;
 
-public class Documents {
-	String strNumDoc, strTitre, strDate;
-	int intPretEtat;
+import java.io.Serializable;
+
+public class Documents implements Serializable {
+	private static final long serialVersionUID = 1L;
+	String strNumDoc, strTitre, strDate; //////////////// private  
+	String strPretEtat; /////////////// private 
 	
-	public Documents(String strNumDoc, String strTitre, String strDate, int intPretEtat) {
+	public Documents(String strNumDoc, String strTitre, String strDate, String strPretEtat) {
 		// TODO Auto-generated constructor stub
 		this.strNumDoc = strNumDoc;
 		this.strTitre = strTitre;
-		this.intPretEtat = intPretEtat;
+		this.strPretEtat = strPretEtat;
 		this.strDate = strDate;
 	}
 
@@ -33,10 +36,10 @@ public class Documents {
 		this.strDate = strDate;
 	}
 
-	public int getIntPret() {
-		return intPretEtat;
+	public String getIntPret() {
+		return strPretEtat;
 	}
-	public void setIntPret(int intPretEtat) {
-		this.intPretEtat = intPretEtat;
+	public void setIntPret(String strPretEtat) {
+		this.strPretEtat = strPretEtat;
 	}
 }

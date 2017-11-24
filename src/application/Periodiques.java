@@ -1,10 +1,13 @@
 package application;
 
-public class Periodiques extends Documents {
-	int intVol, intPer;
+import java.io.Serializable;
+
+public class Periodiques extends Documents implements Serializable {
+	private static final long serialVersionUID = 1L;
+	private String intVol, intPer;
 	
-	public Periodiques(String strNumDoc, String strTitre, String strDate, int intPret, int intVol, int intPer) {
-		super(strNumDoc, strTitre, strDate,  intPret);
+	public Periodiques(String strNumDoc, String strTitre, String strDate, String strPretEtat, String intVol, String intPer) {
+		super(strNumDoc, strTitre, strDate,  strPretEtat);
 		
 		this.intVol = intVol;
 		this.intPer = intPer;
@@ -13,20 +16,20 @@ public class Periodiques extends Documents {
 	@Override
 	public String toString() {
 		return "Periodiques [intVol=" + intVol + ", intPer=" + intPer + ", strNumDoc=" + strNumDoc + ", strTitre="
-				+ strTitre + ", strDate=" + strDate + ", intPret=" + intPretEtat + "]";
+				+ strTitre + ", strDate=" + strDate + ", strPretEtat=" + strPretEtat + "]";
 	}
 
-	public int getIntVol() {
+	public String getIntVol() {
 		return intVol;
 	}
-	public void setIntVol(int intVol) {
+	public void setIntVol(String intVol) {
 		this.intVol = intVol;
 	}
 
-	public int getIntPer() {
+	public String getIntPer() {
 		return intPer;
 	}
-	public void setIntPer(int intPer) {
+	public void setIntPer(String intPer) {
 		this.intPer = intPer;
 	}
 }

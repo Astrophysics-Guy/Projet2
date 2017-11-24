@@ -8,19 +8,15 @@ import java.util.Collections;
 import java.util.StringTokenizer;
 import java.util.stream.Collectors;
 
-import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.*;
-import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
@@ -29,7 +25,7 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 
 
-public class MenuPrincipal extends Stage {
+public class MenuPrincipal_OLD extends Stage {
 	// Fichier ressource
 	private final String strNomFichier = "Donnees" + System.getProperty("file.separator"); // j utilise ubuntu
 
@@ -39,7 +35,7 @@ public class MenuPrincipal extends Stage {
 	private ArrayList<Periodiques> arrPeriodiques = new ArrayList<>();
 	
 	// Pour la liste d'adherents qui peuvent se connecter
-	private ArrayList<String> arrLstAdherentAjoute = new ArrayList<>();
+	private ArrayList<String> arrLstAdherentAjoute, arrLstAdherentDisponible; // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Pas utiliser
 
 	// Pour l'interface
 	private MenuBar menuBar;
@@ -60,22 +56,33 @@ public class MenuPrincipal extends Stage {
 
 	// le stage du login
 	private Stage primaryStage;
+	private Scene scene; ///////////////////////////////////////////////////////////
 
-	MenuPrincipal(TextField textFieldEmploye, Stage primaryStage, ArrayList<String> arrLstAdherentAjoute) { // qd l'adherent se connecte et veut ajouter/enlever des adherents
+	/*MenuPrincipal_OLD(TextField textFieldEmploye, Stage primaryStage) { // qd l'adherent se connecte et veut ajouter/enlever des adherents
 		this.textFieldEmploye = textFieldEmploye;
 		this.primaryStage = primaryStage;
 
 		this.arrLstAdherentAjoute = arrLstAdherentAjoute;
+		this.arrLstAdherentDisponible = arrLstAdherentDisponible;
+		
+		nouvellePersonne(false);
 		
 		menuPrepose(true);
-	}
-	MenuPrincipal(TextField textFieldEmploye, Stage primaryStage) { // qd le prepose se connecte et veut afficher la table view
+	}*/
+	MenuPrincipal_OLD(TextField textFieldEmploye, Stage primaryStage) { // qd le prepose se connecte et veut afficher la table view
 		this.textFieldEmploye = textFieldEmploye;
 		this.primaryStage = primaryStage;
+		
+		nouvellePersonne(true);
 
 		menuPrepose(false);		
 	}
-	MenuPrincipal(Stage primaryStage, TextField textFieldAdherent) { // qd l'adherent se connecte
+	MenuPrincipal_OLD(Stage primaryStage, TextField textFieldAdherent) { // qd l'adherent se connecte
+		this.textAdherent = textAdherent;
+		this.primaryStage = primaryStage;
+		
+		nouvellePersonne(true);
+		
 		menuAdherent();
 	}
 
@@ -85,28 +92,29 @@ public class MenuPrincipal extends Stage {
 		return Font.font("Serif", FontWeight.BOLD, intSize);
 	}
 
-	private void nouvellePersonne() { // Fait appel a chaque fois que l'utilisateur change de personne
-		deconnexion();
-		
-		arrDVD.clear();
-		arrLivres.clear();
-		arrPeriodiques.clear();
-		
-		/*arrPrepose.clear();
-		arrAdherent.clear();*/
+	private void nouvellePersonne(boolean blnLire) { // Fait appel a chaque fois que l'utilisateur se connecte
+		if (blnLire) {
+			arrDVD.clear();
+			arrLivres.clear();
+			arrPeriodiques.clear();
+			
+			lireDVD();
+			lireLivres();
+			lirePeriodiques();
+		}
+		else {
+			lstViewEmployeSource = null;
+			lstViewEmployeDestination = null;
+		}
 		
 		//arrLstAdherentAjoute.clear(); // Il ne faut pas l'effacer, pcq on en a besoin pour se connecter dans le compte d'adherent
 		
-		vBox.getChildren().clear(); // removeAll() doesnt work
-		
-		/*lireDVD();
-		lireLivres();
-		lirePeriodiques();*/
+		//vBox.getChildren().clear(); // removeAll() doesnt work
 	}
 
 	private void menuPrincipal() {
 		BorderPane root = new BorderPane();
-		Scene scene = new Scene(root,900,600); // 1.5 aspect ratio
+		scene = new Scene(root,900,600); // 1.5 aspect ratio
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 
 		// Bar
@@ -134,10 +142,8 @@ public class MenuPrincipal extends Stage {
 		VBox vBoxMain = new VBox();
 		vBoxMain.setPadding(new Insets(10));
 		vBoxMain.setAlignment(Pos.TOP_CENTER);
-		vBoxMain.setSpacing(30);
+		vBoxMain.setSpacing(50);
 
-		textTitre = new Text("Connecte en tant que prepose " + textFieldEmploye.getText());
-		//textTitre.setFill(Color.rgb(21, 117, 84));
 		textTitre.setFont(font(30));
 		textTitre.setTextAlignment(TextAlignment.CENTER);
 
@@ -154,144 +160,46 @@ public class MenuPrincipal extends Stage {
 
 		this.show();
 
-		menuItemDeconnexion.setOnAction(event -> { // ne pas oublier de passer arrLstAdherentAjoute au Login
-			this.close();
-
-			primaryStage.show();
-		});
-
 		/////////////////////////////////////////////////////////////////////////////
 		menuItemAide.setOnAction(event -> {
 
 		});
 	}
-	private void menuPrepose(boolean blnLstAdherent) { // setOnAction des boutons, itemMenus, ...etc
-		/*menuItemPrepose.setOnAction(event -> {
-            nouvellePersonne();
-
-            if (event.getSource() instanceof MenuItem) textTitre.setText(retourneNomMenuItem(((MenuItem) event.getSource()).getText()));
-
-            textEmploye = new Text("No Employe  ");
-            textMotDePasse = new Text("Mot de Passe");
-
-            textEmploye.setFont(font(15));
-            textMotDePasse.setFont(font(15));
-
-            textFieldEmploye = new TextField();
-            passwordFieldEmploye = new PasswordField();
-
-            textFieldEmploye.setPromptText("No Employe");
-            passwordFieldEmploye.setPromptText("Mot de passe");
-
-            lblMsg = new Label();
-            lblMsg.setFont(font(15));
-            HBox hBox1 = new HBox(), hBox2 = new HBox(), hBox3 = new HBox();
-
-            hBox1.getChildren().addAll(textEmploye, textFieldEmploye);
-            hBox1.setSpacing(10);
-            hBox2.getChildren().addAll(textMotDePasse, passwordFieldEmploye);
-            hBox2.setSpacing(10);
-            hBox3.getChildren().addAll(lblMsg);
-
-            vBox.getChildren().addAll(hBox1, hBox2, hBox3);
-
-            textFieldEmploye.setOnAction(new classConnexionEmploye());
-            passwordFieldEmploye.setOnAction(new classConnexionEmploye());
-        });
-		menuItemAdherent.setOnAction(event -> {
-            nouvellePersonne();
-
-            if (event.getSource() instanceof MenuItem) textTitre.setText(retourneNomMenuItem(((MenuItem) event.getSource()).getText()));
-
-            textAdherent = new Text("No Adherent");
-
-            textAdherent.setFont(font(15));
-
-            textFieldAdherent = new TextField();
-
-            textFieldAdherent.setPromptText("No Adherent");
-
-            lblMsg = new Label();
-            lblMsg.setFont(font(15));
-            HBox hBox1 = new HBox(), hBox2 = new HBox();
-
-            hBox1.getChildren().addAll(textAdherent, textFieldAdherent);
-            hBox1.setSpacing(10);
-            hBox2.getChildren().add(lblMsg);
-
-            vBox.getChildren().addAll(hBox1, hBox2);
-
-            textFieldAdherent.setOnAction(new classConnexionAdherent());
-        });*/
-
+	private void menuPrepose(boolean blnLstAdherent) {
+		textTitre = new Text("Connecte en tant que prepose " + textFieldEmploye.getText());
+		
 		menuPrincipal();
+		
+		menuItemDeconnexion.setOnAction(event -> { // ne pas oublier de passer arrLstAdherentAjoute au Login_OLD
+			deconnexion(true); // deconnexion prepose
+		});
 
 		if (blnLstAdherent) methodeLstViewEmploye();
 		else methodeTableViewEmploye();
 
-		if (blnLstAdherent) this.setTitle("MenuPrincipalLstViewEmploye");
-		else this.setTitle("MenuPrincipalTableViewEmploye");
+		if (blnLstAdherent) this.setTitle("Menu Prepose --> Ajouter et/ou enlever des comptes adherents");
+		else this.setTitle("Menu Prepose --> Consulter la liste");
 	}
 	private void menuAdherent() {
+		textTitre = new Text("Connecte en tant que prepose " + textAdherent.getText());
+		
 		menuPrincipal();
+		
+		menuItemDeconnexion.setOnAction(event -> { // ne pas oublier de passer arrLstAdherentAjoute au Login_OLD
+			deconnexion(false); // deconnexion adherent
+		});
 
-		methodeTableViewAdherent();
+		//methodeTableViewAdherent(); // A completer
+		methodeTableViewEmploye();
 
-		this.setTitle("MenuAdherent");
+		this.setTitle("Menu Adherent --> Consulter la liste");
 	}
-	private class classConnexionEmploye implements EventHandler<ActionEvent> { // lorsque l'utilisateur est un employe et veut se connecter
-
-		@Override
-		public void handle(ActionEvent event) {
-			if (passwordFieldEmploye.getText().trim().equals("10101997") && textFieldEmploye.getText().trim().equals("Guelleh")) {
-				/*lblMsg.setText("Connecte en tant que prepose " + textFieldEmploye.getText());
-				lblMsg.setTextFill(Color.rgb(21, 117, 84));*/
-
-				textFieldEmploye.setDisable(true);
-				passwordFieldEmploye.setDisable(true);
-
-				connexion(true);
-			}
-			else {
-				/*lblMsg.setText("No d'employe ou mot de passe incorrecte");
-				lblMsg.setTextFill(Color.rgb(210, 39, 30));*/
-			}
-
-			passwordFieldEmploye.clear();
-		}
-	}
-	private class classConnexionAdherent implements EventHandler<ActionEvent> { // lorsque l'utilisateur est un adherent et veut se connecter
-
-		@Override
-		public void handle(ActionEvent event) {
-			Collections.sort(arrLstAdherentAjoute);
-
-			boolean blnFor = false;
-			for (String strAdherent : arrLstAdherentAjoute) {
-				if (textFieldAdherent.getText().trim().equals(strAdherent)) {
-					/*lblMsg.setText("Connecte en tant qu'adherent " + textFieldAdherent.getText());
-					lblMsg.setTextFill(Color.rgb(21, 117, 84));*/
-
-					textFieldAdherent.setDisable(true);
-
-					connexion(false);
-
-					blnFor = true;
-				}
-			}
-
-			if (!blnFor) { // il n'a trouve aucun adherent dans la liste qui correspond
-				/*lblMsg.setText("No d'adherent incorrecte");
-				lblMsg.setTextFill(Color.rgb(210, 39, 30));*/
-			}
-		}
-	}
-
+	
 	private String retourneNomMenuItem(String strNomMenuItem) { // Remplace _ du string et retourne par exemple Sport au lieu de _Sport
 		return strNomMenuItem.replaceAll("_", "");
 	}
 	
-	private void connexion(boolean blnEmploye) { // Quand la personne se connecte
+	/*private void connexion(boolean blnPrepose) { // Quand la personne se connecte
 		/*menuDeconnexion = new Menu("_Deconnexion");
 		menuItemDeconnexion = new MenuItem("De_connexion");
 		
@@ -303,31 +211,28 @@ public class MenuPrincipal extends Stage {
         });
 		
 		menuDeconnexion.getItems().add(menuItemDeconnexion);
-		menuBar.getMenus().add(menuDeconnexion);*/
+		menuBar.getMenus().add(menuDeconnexion);
 		
-		if (blnEmploye) { // Quand l'employe se connecte
+		if (blnPrepose) { // Quand l'employe se connecte
 			methodeLstViewEmploye();
 			methodeTableViewEmploye();
 		} 
 		else { // Quand l'adherent se connecte
 			methodeTableViewAdherent();
 		}
-	}
-	private void deconnexion() { // Quand la personne se deconencte ou change de personne
-		/*if (menuItemDeconnexion != null && menuDeconnexion != null) {
-			menuDeconnexion.getItems().remove(menuItemDeconnexion);
-			menuBar.getMenus().remove(menuDeconnexion);
-		}*/
-		
-		if (textFieldEmploye != null && passwordFieldEmploye != null) {
-			textFieldEmploye.setDisable(false);
-			passwordFieldEmploye.setDisable(false);
-		}
-		if (textFieldAdherent != null) textFieldAdherent.setDisable(false);
+	}*/
+	
+	private void deconnexion(boolean blnPrepose) { // Quand la personne se deconnecte ou change de personne
+		if (blnPrepose) { // animation de deconnexion pour prepose
+			this.close();
 
-		//if (lblMsg != null) lblMsg.setText(null);
-		if (gridPaneEmploye != null && vBox != null) vBox.getChildren().remove(gridPaneEmploye);
-		if (group != null && vBox != null) vBox.getChildren().remove(group);
+			primaryStage.show();
+		}
+		else { // animation de deconnexion pour adherent
+			this.close();
+
+			primaryStage.show();
+		}
 	}
 	
 	private void methodeLstViewEmploye() { // Pour permettre au prepose d'ajouter et de supprimer les adherents, methode connexion
@@ -339,7 +244,7 @@ public class MenuPrincipal extends Stage {
 		
 		VBox vBoxButton = new VBox();
 		vBoxButton.setSpacing(10);
-		vBoxButton.setAlignment(Pos.CENTER);
+		vBoxButton.setAlignment(Pos.TOP_LEFT);
 		vBoxButton.getChildren().addAll(btnDeplacerDestination, btnDeplacerSource);
 		
 		gridPaneEmploye = new GridPane();
@@ -351,7 +256,7 @@ public class MenuPrincipal extends Stage {
 		ObservableList<String> listeObservable = FXCollections.observableArrayList(arrLstAdherentAjoute);
 		Collections.sort(arrLstAdherentAjoute);
 
-		lstViewEmployeSource = new ListView<>(FXCollections.observableArrayList("Guelleh", "Guelleh", "cyan", "rouge", "gris", "vert", "rose", "jaune"));
+		lstViewEmployeSource = new ListView<>(FXCollections.observableArrayList(arrLstAdherentDisponible)); 
 		lstViewEmployeDestination = new ListView<>(listeObservable);
 
 		lstViewEmployeSource.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
@@ -374,7 +279,7 @@ public class MenuPrincipal extends Stage {
         //colonneSource.setHgrow(Priority.ALWAYS);
         //colonneDestination.setHgrow(Priority.ALWAYS);
         
-        btnDeplacerSource.setOnAction(arg0 -> {
+        btnDeplacerSource.setOnAction(event -> {
             // TODO Auto-generated method stub
             ObservableList<String> listeSelectionnee = lstViewEmployeSource.getSelectionModel().getSelectedItems();
 
@@ -429,6 +334,8 @@ public class MenuPrincipal extends Stage {
         gridPaneEmploye.add(lblDestination, 2, 0);
         gridPaneEmploye.add(lstViewEmployeDestination, 2, 1);
         
+        gridPaneEmploye.setAlignment(Pos.CENTER);
+        
         vBox.getChildren().add(gridPaneEmploye);
 	}
 	private void methodeTableViewEmploye() { // Pour permettre au prepose de voir la table, methode connexion ////////////////////////////////////////////////
@@ -439,7 +346,8 @@ public class MenuPrincipal extends Stage {
 		Text text = new Text();
 		text.setText("Liste des livres");
 		text.setFont(font(15));
-
+		//borderPane.prefHeightProperty().bind(70);
+				
 		VBox vBoxGroup = new VBox();
 		vBoxGroup.setAlignment(Pos.BOTTOM_LEFT);
 
@@ -483,7 +391,7 @@ public class MenuPrincipal extends Stage {
 		vBoxGroup.getChildren().addAll(text, tableView, hBoxGroup);
 
 		group.getChildren().add(vBoxGroup);
-		vBox.getChildren().add(group);
+		vBox.getChildren().addAll(group);
 	}
 	private void methodeTableViewAdherent() { // Pour permettre a l'adherent de voir la table, les adherents, methode connexion
 		
@@ -505,7 +413,7 @@ public class MenuPrincipal extends Stage {
 
 			while ((strLigne = brFichier.readLine()) != null) {
 				StringTokenizer st = new StringTokenizer(strLigne, ",");
-				arrDVD.add(new DVD(st.nextToken().trim().toString(), st.nextToken().trim().toString(), st.nextToken().trim().toString(), 0, Integer.parseInt(st.nextToken().trim().toString()), st.nextToken().trim().toString()));
+				arrDVD.add(new DVD(st.nextToken().trim().toString(), st.nextToken().trim().toString(), st.nextToken().trim().toString(), "0", st.nextToken().trim().toString(), st.nextToken().trim().toString()));
 			}
 			//for (int i = 0; i < arrDVD.size(); i++) System.out.println(arrDVD.get(i).toString());
 		}
@@ -531,7 +439,7 @@ public class MenuPrincipal extends Stage {
 
 			while ((strLigne = brFichier.readLine()) != null) {
 				StringTokenizer st = new StringTokenizer(strLigne, ",");
-				arrLivres.add(new Livres(st.nextToken().trim().toString(), st.nextToken().trim().toString(), st.nextToken().trim().toString(), 0, st.nextToken().trim().toString()));
+				arrLivres.add(new Livres(st.nextToken().trim().toString(), st.nextToken().trim().toString(), st.nextToken().trim().toString(), "0", st.nextToken().trim().toString()));
 			}
 			//for (int i = 0; i < arrLivres.size(); i++) System.out.println(arrLivres.get(i).toString());
 		}
@@ -556,7 +464,7 @@ public class MenuPrincipal extends Stage {
 
 			while ((strLigne = brFichier.readLine()) != null) {
 				StringTokenizer st = new StringTokenizer(strLigne, ",");
-				arrPeriodiques.add(new Periodiques(st.nextToken().trim().toString(), st.nextToken().trim().toString(), st.nextToken().trim().toString(), 0, Integer.parseInt(st.nextToken().trim().toString()), Integer.parseInt(st.nextToken().trim().toString())));
+				arrPeriodiques.add(new Periodiques(st.nextToken().trim().toString(), st.nextToken().trim().toString(), st.nextToken().trim().toString(), "0", st.nextToken().trim().toString(), st.nextToken().trim().toString()));
 			}
 			//for (int i = 0; i < arrPeriodiques.size(); i++) System.out.println(arrPeriodiques.get(i).toString());
 		}
@@ -564,8 +472,5 @@ public class MenuPrincipal extends Stage {
 			e.printStackTrace();
 		}
 	}
-	
-	/*public static void main(String[] args) {
-		launch(args);
-	}*/
+
 }
