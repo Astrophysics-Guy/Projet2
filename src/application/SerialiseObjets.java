@@ -39,6 +39,28 @@ public class SerialiseObjets {
 			e.printStackTrace();
 		}
 	}
+	public SerialiseObjets(Livres livres) {
+		try {
+			ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(strNomFichier + "livre.ser"));
+
+			objectOutputStream.writeObject(livres);
+			objectOutputStream.close();
+		}
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	public SerialiseObjets(Periodiques periodiques) {
+		try {
+			ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(strNomFichier + "periodique.ser"));
+
+			objectOutputStream.writeObject(periodiques);
+			objectOutputStream.close();
+		}
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 
 	/*public static void serialiseDVD() {
 

@@ -225,7 +225,7 @@ public class MenuPrincipal extends Stage {
 			}
 			//for (int i = 0; i < arrDVD.size(); i++) System.out.println(arrDVD.get(i));
 			String strNumDoc = arrDVD.get(arrDVD.size()-1).getStrNumDoc();
-			intDVDNoDocMax = Integer.parseInt(strNumDoc.substring(3, strNumDoc.length()));
+			intDVDNoDocMax = Integer.parseInt(strNumDoc.substring(3, strNumDoc.length())) + 1;
 		}
 		catch (Exception e) {
 			//System.out.println(e);
@@ -253,7 +253,7 @@ public class MenuPrincipal extends Stage {
 			}
 			//for (int i = 0; i < arrLivres.size(); i++) System.out.println(arrLivres.get(i));
 			String strNumDoc = arrLivres.get(arrLivres.size()-1).getStrNumDoc();
-			intLivresNoDocMax = Integer.parseInt(strNumDoc.substring(3, strNumDoc.length()));
+			intLivresNoDocMax = Integer.parseInt(strNumDoc.substring(3, strNumDoc.length())) + 1;
 		}
 		catch (Exception e) {
 			e.printStackTrace();
@@ -280,7 +280,7 @@ public class MenuPrincipal extends Stage {
 			}
 			//for (int i = 0; i < arrPeriodiques.size(); i++) System.out.println(arrPeriodiques.get(i));
 			String strNumDoc = arrPeriodiques.get(arrPeriodiques.size()-1).getStrNumDoc();
-			intPeriodiquesNoDocMax = Integer.parseInt(strNumDoc.substring(3, strNumDoc.length()));
+			intPeriodiquesNoDocMax = Integer.parseInt(strNumDoc.substring(3, strNumDoc.length())) + 1;
 		}
 		catch (Exception e) {
 			e.printStackTrace();

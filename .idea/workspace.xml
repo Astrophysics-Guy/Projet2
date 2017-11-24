@@ -5,39 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4d7b9a0-4347-4c3b-8a47-bf7ac9fc91f2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Donnees/dvd.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login$1classConnexionAdherent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login$1classConnexionEmploye.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login_BackUp$1classConnexionAdherent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login_BackUp$1classConnexionEmploye.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login_BackUp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login_Ismail$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login_Ismail$1classConnexion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login_Ismail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/MenuPrincipal_BackUp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/MenuPrincipal_Imail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/ModifierDocument$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/ModifierDocument$GestionComboBox.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/application/ModifierDocument.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet2/dvd.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/application/Login_BackUp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/application/Login_OLD.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/application/MenuPrincipal_BackUp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/application/ModifierDocument.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/DVD.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/DVD.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Documents.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/Documents.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Login.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/MenuPrincipal.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/MenuPrincipal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/ModificationDocument$GestionComboBox.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/ModificationDocument$GestionComboBox.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/ModificationDocument.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/ModificationDocument.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet2/application/Periodiques.class" afterPath="$PROJECT_DIR$/out/production/Projet2/application/Periodiques.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/DVD.java" afterPath="$PROJECT_DIR$/src/application/DVD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Documents.java" afterPath="$PROJECT_DIR$/src/application/Documents.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/DeserialiseObjets.java" afterPath="$PROJECT_DIR$/src/application/DeserialiseObjets.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/MenuPrincipal.java" afterPath="$PROJECT_DIR$/src/application/MenuPrincipal.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/ModificationDocument.java" afterPath="$PROJECT_DIR$/src/application/ModificationDocument.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/Periodiques.java" afterPath="$PROJECT_DIR$/src/application/Periodiques.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/SerialiseObjets.java" afterPath="$PROJECT_DIR$/src/application/SerialiseObjets.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,12 +40,9 @@
       <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="243" column="12" lean-forward="true" selection-start-line="243" selection-start-column="12" selection-end-line="243" selection-end-column="12" />
-              <folding>
-                <element signature="e#878#879#0" expanded="true" />
-                <element signature="e#897#898#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="5136">
+              <caret line="243" column="12" lean-forward="false" selection-start-line="243" selection-start-column="12" selection-end-line="243" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,12 +50,9 @@
       <file leaf-file-name="MenuPrincipal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-45">
-              <caret line="227" column="87" lean-forward="false" selection-start-line="227" selection-start-column="87" selection-end-line="227" selection-end-column="87" />
-              <folding>
-                <element signature="e#6452#6453#0" expanded="true" />
-                <element signature="e#6510#6511#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="217" column="0" lean-forward="true" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,12 +60,32 @@
       <file leaf-file-name="ModificationDocument.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/ModificationDocument.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="45" column="64" lean-forward="false" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+            <state relative-caret-position="297">
+              <caret line="533" column="135" lean-forward="false" selection-start-line="533" selection-start-column="135" selection-end-line="533" selection-end-column="135" />
               <folding>
-                <element signature="e#4963#4964#0" expanded="true" />
-                <element signature="e#5030#5031#0" expanded="true" />
+                <element signature="e#6700#6701#0" expanded="true" />
+                <element signature="e#6767#6768#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeserialiseObjets.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/DeserialiseObjets.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4245">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SerialiseObjets.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/SerialiseObjets.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,20 +101,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>menuEtSetOnAction</find>
-      <find>menuPreposeEtSetOnAction</find>
-      <find>private</find>
-      <find>menuPre</find>
-      <find>/*, textFieldPret*/</find>
-      <find>btnDoc</find>
-      <find>docL</find>
-      <find>setBac</find>
-      <find>/*, hBoxPret*/</find>
-      <find>*, hBoxPret = new HBox()*/</find>
-      <find>textTi</find>
-      <find>border</find>
-      <find>intNbDisques</find>
-      <find>intPretEtat</find>
       <find>Integer.</find>
       <find>strVerifUtil</find>
       <find>.setOnAc</find>
@@ -145,6 +117,20 @@
       <find>strDVDNoDocMax</find>
       <find>strLivresNoDocMax</find>
       <find>strPeriodiquesNoDocMax</find>
+      <find>vBoxDocInitial</find>
+      <find>new Ser</find>
+      <find>btnD</find>
+      <find>docDVD</find>
+      <find>textFieldNoDoc</find>
+      <find>comboBoxNo</find>
+      <find>hBoxComboBox</find>
+      <find>comboBox</find>
+      <find>GestionComboBox</find>
+      <find>arrDVD</find>
+      <find>0 nou</find>
+      <find>hBoxB</find>
+      <find>btnDoc</find>
+      <find>btnDoc = new</find>
     </findStrings>
     <replaceStrings>
       <replace>strNomMenuItem</replace>
@@ -167,6 +153,10 @@
       <replace>intDVDNoDocMax</replace>
       <replace>intLivresNoDocMax</replace>
       <replace>intPeriodiquesNoDocMax</replace>
+      <replace>hBoxComboBoxDocuments</replace>
+      <replace>comboBoxDocuments</replace>
+      <replace>GestionComboBoxDocuments</replace>
+      <replace>Aucun nou</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -188,8 +178,6 @@
         <option value="$PROJECT_DIR$/src/application/SerialisePersonnes.java" />
         <option value="$PROJECT_DIR$/src/application/Livres.java" />
         <option value="$PROJECT_DIR$/src/application/MenuPrincipal_BackUp.java" />
-        <option value="$PROJECT_DIR$/src/application/SerialiseObjets.java" />
-        <option value="$PROJECT_DIR$/src/application/DeserialiseObjets.java" />
         <option value="$PROJECT_DIR$/src/application/MenuPrincipal_Imail.java" />
         <option value="$PROJECT_DIR$/src/application/Login_Ismail.java" />
         <option value="$PROJECT_DIR$/src/application/Documents.java" />
@@ -197,6 +185,8 @@
         <option value="$PROJECT_DIR$/src/application/Periodiques.java" />
         <option value="$PROJECT_DIR$/src/application/Login.java" />
         <option value="$PROJECT_DIR$/src/application/MenuPrincipal.java" />
+        <option value="$PROJECT_DIR$/src/application/SerialiseObjets.java" />
+        <option value="$PROJECT_DIR$/src/application/DeserialiseObjets.java" />
         <option value="$PROJECT_DIR$/src/application/ModificationDocument.java" />
       </list>
     </option>
@@ -241,10 +231,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,6 +254,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -294,7 +284,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Login_Ismail">
+  <component name="RunManager" selected="Application.Login">
     <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -453,14 +443,14 @@
       <listeners />
     </configuration>
     <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Application.MenuPrincipal_OLD" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Login_OLD" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Login_Ismail" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Login" />
+      <item index="1" class="java.lang.String" itemvalue="Application.MenuPrincipal_OLD" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Login_OLD" />
       <item index="3" class="java.lang.String" itemvalue="Application.SerialiseObjets" />
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.Login_Ismail" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Login" />
         <item index="1" class="java.lang.String" itemvalue="Application.SerialiseObjets" />
         <item index="2" class="java.lang.String" itemvalue="Application.Login_OLD" />
         <item index="3" class="java.lang.String" itemvalue="Application.MenuPrincipal_OLD" />
@@ -523,14 +513,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java">
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3888">
-          <caret line="162" column="85" lean-forward="false" selection-start-line="162" selection-start-column="85" selection-end-line="162" selection-end-column="85" />
+        <state relative-caret-position="5448">
+          <caret line="227" column="87" lean-forward="false" selection-start-line="227" selection-start-column="87" selection-end-line="227" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/ModificationDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="45" column="64" lean-forward="false" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+          <folding>
+            <element signature="e#6700#6701#0" expanded="true" />
+            <element signature="e#6767#6768#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java" />
     <entry file="file://$PROJECT_DIR$/src/application/Livres.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -539,22 +541,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Login_OLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2568">
-          <caret line="107" column="42" lean-forward="false" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3744">
-          <caret line="156" column="108" lean-forward="false" selection-start-line="156" selection-start-column="108" selection-end-line="156" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Login_OLD.java" />
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java" />
     <entry file="file://$PROJECT_DIR$/src/application/Livres.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -563,22 +551,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Login_OLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1272">
-          <caret line="77" column="42" lean-forward="false" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Login_OLD.java" />
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java" />
     <entry file="file://$PROJECT_DIR$/src/application/Livres.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -587,14 +561,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java" />
     <entry file="file://$PROJECT_DIR$/src/application/Livres.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -603,14 +570,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java" />
     <entry file="file://$PROJECT_DIR$/src/application/Livres.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -619,14 +579,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java" />
     <entry file="file://$PROJECT_DIR$/src/application/Documents.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -634,30 +587,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java" />
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java" />
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java" />
     <entry file="file://$PROJECT_DIR$/src/application/Documents.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -665,22 +597,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java" />
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java" />
     <entry file="file://$PROJECT_DIR$/Donnees/DVD.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -688,14 +606,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java" />
     <entry file="file://$PROJECT_DIR$/Donnees/DVD.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -780,22 +691,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1968">
-          <caret line="129" column="27" lean-forward="false" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Login_OLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java" />
+    <entry file="file://$PROJECT_DIR$/src/application/Login_OLD.java" />
     <entry file="file://$PROJECT_DIR$/src/application/Preposes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -804,46 +701,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_BackUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="150" column="146" lean-forward="false" selection-start-line="150" selection-start-column="146" selection-end-line="150" selection-end-column="146" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/SerialiseObjets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/ModifierDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4725">
-          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/DeserialiseObjets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_BackUp.java" />
+    <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal_OLD.java" />
+    <entry file="file://$PROJECT_DIR$/src/application/ModifierDocument.java" />
     <entry file="file://$PROJECT_DIR$/src/application/Livres.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -857,25 +717,8 @@
         <state relative-caret-position="672">
           <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
           <folding>
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Periodiques.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-          <folding>
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="false" />
+            <element signature="e#994#995#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -890,33 +733,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="243" column="12" lean-forward="true" selection-start-line="243" selection-start-column="12" selection-end-line="243" selection-end-column="12" />
-          <folding>
-            <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="5136">
+          <caret line="243" column="12" lean-forward="false" selection-start-line="243" selection-start-column="12" selection-end-line="243" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/MenuPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="227" column="87" lean-forward="false" selection-start-line="227" selection-start-column="87" selection-end-line="227" selection-end-column="87" />
+        <state relative-caret-position="171">
+          <caret line="217" column="0" lean-forward="true" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/SerialiseObjets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/DeserialiseObjets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4245">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Periodiques.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
           <folding>
-            <element signature="e#6452#6453#0" expanded="true" />
-            <element signature="e#6510#6511#0" expanded="true" />
+            <element signature="e#872#873#0" expanded="false" />
+            <element signature="e#899#900#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/ModificationDocument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="45" column="64" lean-forward="false" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+        <state relative-caret-position="297">
+          <caret line="533" column="135" lean-forward="false" selection-start-line="533" selection-start-column="135" selection-end-line="533" selection-end-column="135" />
           <folding>
-            <element signature="e#4963#4964#0" expanded="true" />
-            <element signature="e#5030#5031#0" expanded="true" />
+            <element signature="e#6700#6701#0" expanded="true" />
+            <element signature="e#6767#6768#0" expanded="true" />
           </folding>
         </state>
       </provider>

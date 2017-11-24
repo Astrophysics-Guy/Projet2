@@ -6,12 +6,12 @@ import java.util.ArrayList;
 public class DeserialiseObjets {
 	private static final String strNomFichier = "Donnees" + System.getProperty("file.separator"); // j utilise ubuntu
 
-	private static ArrayList<Preposes> arrPreposes = new ArrayList<>();
-	private static ArrayList<Adherents> arrAdherents = new ArrayList<>();
+	private static ArrayList<Preposes> arrPreposes;
+	private static ArrayList<Adherents> arrAdherents;
 
-	private static ArrayList<DVD> arrDVD = new ArrayList<>();
-	private static ArrayList<Livres> arrLivres = new ArrayList<>();
-	private static ArrayList<Periodiques> arrPeriodiques = new ArrayList<>();
+	private static ArrayList<DVD> arrDVD;
+	private static ArrayList<Livres> arrLivres;
+	private static ArrayList<Periodiques> arrPeriodiques;
 
 	private final static String strFichierPreposes = strNomFichier + "preposes.ser";
 	private final static String strFichierAdherents = strNomFichier + "adherents.ser";
@@ -21,6 +21,8 @@ public class DeserialiseObjets {
 	private final static String strFichierPeriodique = strNomFichier + "periodique.ser";
 
 	public static ArrayList<Preposes> getPreposes() {
+		arrPreposes = new ArrayList<>();
+
 		if (new File(strFichierPreposes).exists()) {
 			FileInputStream fichier = null;
 			try {
@@ -62,6 +64,8 @@ public class DeserialiseObjets {
 		return arrPreposes;
 	}
 	public static ArrayList<Adherents> getAdherents() {
+		arrAdherents = new ArrayList<>();
+
 		if (new File(strFichierAdherents).exists()) {
 			FileInputStream fichier = null;
 			try {
@@ -102,7 +106,9 @@ public class DeserialiseObjets {
 		return arrAdherents;
 	}
 
-	public static ArrayList<DVD> getDVD() {
+	public static ArrayList<DVD> getArrDVD() {
+		arrDVD = new ArrayList<>();
+
 		if (new File(strFichierDVD).exists()) {
 			FileInputStream fichier = null;
 			try {
@@ -138,8 +144,92 @@ public class DeserialiseObjets {
 			SerialiseObjets.serialiseDVD();
 			DeserialiseObjets.getAdherents();
 		}*/
-		for (DVD a : arrDVD) System.out.println(a);
+		//for (DVD a : arrDVD) System.out.println(a);
 
 		return arrDVD;
+	}
+	public static ArrayList<Livres> getArrLivres() {
+		arrLivres = new ArrayList<>();
+
+		if (new File(strFichierLivre).exists()) {
+			FileInputStream fichier = null;
+			try {
+				fichier = new FileInputStream(strFichierLivre);
+			} catch (FileNotFoundException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+			ObjectInputStream is = null;
+			try {
+				is = new ObjectInputStream(fichier);
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+
+			Livres livres;
+			try {
+				while((livres = (Livres) is.readObject()) != null) {
+					arrLivres.add(livres);
+				}
+			}
+			catch (IOException e) {
+				// fin de fichier ou fichier introuvable.
+
+			}
+			catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		/*else {
+			SerialiseObjets.serialiseDVD();
+			DeserialiseObjets.getAdherents();
+		}*/
+		//for (DVD a : arrDVD) System.out.println(a);
+
+		return arrLivres;
+	}
+	public static ArrayList<Periodiques> getArrPeriodiques() {
+		arrPeriodiques = new ArrayList<>();
+
+		if (new File(strFichierPeriodique).exists()) {
+			FileInputStream fichier = null;
+			try {
+				fichier = new FileInputStream(strFichierPeriodique);
+			} catch (FileNotFoundException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+			ObjectInputStream is = null;
+			try {
+				is = new ObjectInputStream(fichier);
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+
+			Periodiques periodiques;
+			try {
+				while((periodiques = (Periodiques) is.readObject()) != null) {
+					arrPeriodiques.add(periodiques);
+				}
+			}
+			catch (IOException e) {
+				// fin de fichier ou fichier introuvable.
+
+			}
+			catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		/*else {
+			SerialiseObjets.serialiseDVD();
+			DeserialiseObjets.getAdherents();
+		}*/
+		//for (DVD a : arrDVD) System.out.println(a);
+
+		return arrPeriodiques;
 	}
 }
