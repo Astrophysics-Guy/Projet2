@@ -531,7 +531,7 @@ public class ModificationDocument extends Stage {
 
 			boolean blnCorrect = true;
 
-			if (textFieldTitre.getText().trim().equals("") || textFieldTitre.getText() == null) { ////////////////////////////// CRASH 
+			if (textFieldTitre.getText().trim().equals("") || textFieldTitre.getText() == null) { ////////////////////////////// CRASH
 				blnCorrect = false;
 				textFieldTitre.setBorder(border(Color.RED));
 			}
